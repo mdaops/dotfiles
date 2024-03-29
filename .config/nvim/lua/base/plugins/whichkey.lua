@@ -12,6 +12,7 @@ return {
       ['<leader>g'] = { name = '[G]it', _ = 'which_key_ignore' },
       ['<leader>n'] = { name = '[N]eo', _ = 'which_key_ignore' },
       ['<leader>f'] = { name = '[F]iletree', _ = 'which_key_ignore' },
+      ['<leader>t'] = { name = '[T]ests', _ = 'which_key_ignore' },
     }
   end,
 }

@@ -150,6 +150,7 @@ export PATH=$JAVA_HOME/bin:$PATH
 export ANDROID_HOME=/home/dev/Android
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH=$PATH:$HOME/bin
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
