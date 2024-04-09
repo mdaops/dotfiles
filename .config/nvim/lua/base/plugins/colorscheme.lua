@@ -26,7 +26,7 @@ return {
           },
         },
       }
-      vim.cmd.colorscheme 'catppuccin'
+      -- vim.cmd.colorscheme 'catppuccin'
     end,
   },
   {
@@ -34,6 +34,15 @@ return {
     config = function()
       vim.cmd.hi 'Comment gui=none'
       -- vim.cmd.colorscheme 'carbonfox'
+    end,
+  },
+  {
+    'rose-pine/neovim',
+    name = 'rose-pine',
+    config = function()
+      require('rose-pine').setup {}
+      vim.cmd.hi 'Comment gui=none'
+      vim.cmd.colorscheme 'rose-pine'
     end,
   },
 }

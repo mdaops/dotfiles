@@ -7,11 +7,13 @@ return {
     'nvim-treesitter/nvim-treesitter',
     'jfpedroza/neotest-elixir',
     'nvim-neotest/neotest-plenary',
+    'nvim-neotest/neotest-go',
   },
   opts = {
     adapters = {
       ['neotest-plenary'] = {},
       ['neotest-elixir'] = {},
+      ['neotest-go'] = {},
     },
   },
   status = { virtual_text = true },
@@ -144,6 +146,13 @@ return {
         require('neotest').run.stop()
       end,
       desc = 'Stop',
+    },
+    {
+      '<leader>td',
+      function()
+        require('neotest').diagnostic()
+      end,
+      desc = 'Test diagnostics',
     },
   },
 }

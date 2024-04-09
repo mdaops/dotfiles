@@ -11,6 +11,10 @@ return {
     end,
     formatters_by_ft = {
       lua = { 'stylua' },
+      typescript = { { 'prettierd', 'prettier' } },
+      typescriptreact = { { 'prettierd', 'prettier' } },
+      javascript = { { 'prettierd', 'prettier' } },
+      javascriptreact = { { 'prettierd', 'prettier' } },
       go = { 'goimports', 'gofumpt' },
       terraform = { 'terraform_fmt' },
       tf = { 'terraform_fmt' },

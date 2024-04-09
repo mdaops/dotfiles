@@ -122,6 +122,7 @@ alias pbpaste="powershell.exe -command 'Get-Clipboard' | tr -d '\r' | head -n -1
 alias p="cd ~/gh/gbg/platform"
 alias go="go1.22.0"
 alias v="vim"
+alias mydocker='docker build -t mydocker . && docker run --cap-add="SYS_ADMIN" mydocker'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -145,7 +146,7 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 
-export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
 export PATH=$JAVA_HOME/bin:$PATH
 export ANDROID_HOME=/home/dev/Android
 export PATH=$PATH:$ANDROID_HOME/tools
