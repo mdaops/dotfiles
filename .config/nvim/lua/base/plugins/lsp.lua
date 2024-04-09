@@ -77,11 +77,11 @@ return { -- LSP Configuration & Plugins
       end,
     })
 
+
     local capabilities = vim.lsp.protocol.make_client_capabilities()
     capabilities = vim.tbl_deep_extend('force', capabilities, require('cmp_nvim_lsp').default_capabilities())
 
     local servers = {
-      tsserver = { settings = {} },
       gopls = {
         settings = {
           gofumpt = true,
@@ -168,17 +168,17 @@ return { -- LSP Configuration & Plugins
           server.capabilities = vim.tbl_deep_extend('force', {}, capabilities, server.capabilities or {})
           require('lspconfig')[server_name].setup(server)
         end,
-        -- ['elixir-ls'] = function()
-        --   require('lspconfig').elixirls.setup {
-        --     cmd = { '/home/dev/.config/.elixir-ls/release/language_server.sh' },
-        --     settings = elixir.settings {
-        --       dialyzerEnabled = true,
-        --       fetchDeps = false,
-        --       enableTestLenses = false,
-        --       suggestSpecs = false,
-        --     },
-        --   }
-        -- end,
+        ['elixir-ls'] = function()
+          require('lspconfig').elixirls.setup({
+             cmd = { '/home/dev/.config/.elixir-ls/release/language_server.sh' },
+             settings = elixir.settings({
+                dialyzerEnabled = true,
+                fetchDeps = false,
+                enableTestLenses = false,
+                suggestSpecs = false,
+             })
+          })
+        end,
       },
     }
   end,

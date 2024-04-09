@@ -19,8 +19,6 @@ return {
         'elixir',
         'eex',
         'heex',
-        'typescript',
-        'tsx',
       },
       auto_install = true,
       highlight = { enable = true },

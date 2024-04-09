@@ -13,6 +13,7 @@ return {
     name = 'catppuccin',
     priority = 1000,
     config = function()
+<<<<<<< HEAD
       -- require('catppuccin').setup {
       --   integrations = {
       --     cmp = true,
@@ -27,6 +28,22 @@ return {
       --   },
       -- }
       -- vim.cmd.colorscheme 'catppuccin'
+=======
+      require('catppuccin').setup {
+        integrations = {
+          cmp = true,
+          gitsigns = true,
+          nvimtree = true,
+          treesitter = true,
+          notify = true,
+          mini = {
+            enabled = true,
+            indentscope_color = '',
+          },
+        },
+      }
+      vim.cmd.colorscheme 'catppuccin'
+>>>>>>> parent of 8d264b6 (colorscheme -> lsp)
     end,
   },
   {
@@ -36,6 +53,7 @@ return {
       -- vim.cmd.colorscheme 'carbonfox'
     end,
   },
+<<<<<<< HEAD
   {
     'rose-pine/neovim',
     name = 'rose-pine',
@@ -66,4 +84,6 @@ return {
       vim.cmd.colorscheme 'rose-pine'
     end,
   },
+=======
+>>>>>>> parent of 8d264b6 (colorscheme -> lsp)
 }
