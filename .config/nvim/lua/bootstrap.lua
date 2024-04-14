@@ -11,4 +11,5 @@ vim.opt.rtp:prepend(lazypath)
 require('lazy').setup {
   { import = 'base.plugins' },
   { import = 'custom.plugins' },
+  { import = 'custom.plugins.lang.elixir' },
 }
