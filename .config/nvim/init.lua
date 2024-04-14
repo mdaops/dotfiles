@@ -1,4 +1,4 @@
 require 'options'
-require 'keymaps'
 require 'bootstrap'
+require 'keymaps'
 require 'autocmd'
