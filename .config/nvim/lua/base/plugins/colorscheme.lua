@@ -39,8 +39,10 @@ return {
   {
     'rose-pine/neovim',
     name = 'rose-pine',
+    lazy = false,
     config = function()
       require('rose-pine').setup {
+        extend_background_behind_borders = true,
         enable = {
           terminal = true,
           legacy_highlights = true,
@@ -49,7 +51,7 @@ return {
         styles = {
           bold = true,
           italic = false,
-          transparency = false,
+          transparency = true,
         },
         highlight_groups = {
           StatusLine = { fg = 'love', bg = 'love', blend = 10 },
@@ -60,6 +62,9 @@ return {
           TelescopeResultsNormal = { fg = 'subtle', bg = 'none' },
           TelescopeSelection = { fg = 'text', bg = 'base' },
           TelescopeSelectionCaret = { fg = 'rose', bg = 'rose' },
+          GitSignsAdd = { fg = '#bacfc4', inherit = false },
+          GitSignsChange = { fg = '#e6d2c1', inherit = false },
+          GitSignsDelete = { fg = '#dbb6b4', inherit = false },
         },
       }
       vim.cmd.hi 'Comment gui=none'

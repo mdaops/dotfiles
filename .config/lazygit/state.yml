@@ -1,13 +1,8 @@
 lastupdatecheck: 0
 recentrepos:
-- /home/dev/gh/gbg/platform/location-github-governance
-- /home/dev/gh/gbg/platform/location-gcp-projects
-- /home/dev/gh/gbg/platform/gbgplc-gcp-governance
-- /home/dev/gh/gbg/loqate-verify-querycoordinator
-- /home/dev/gh/gbg/loqate-verify-spatial-api
+- /home/dev/gh/gbg/platform/loqate-gcp-projects
+- /home/dev/gh/gbg/platform/loqate-github-governance
 - /home/dev/dotfiles
-- /home/dev/gh/gbg/platform/location-terraform-identity-federation
-- /home/dev/gh/gbg/loqate-verify-vector
 startuppopupversion: 5
 customcommandshistory:
 - q
