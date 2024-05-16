@@ -1,0 +1,15 @@
+2024-05-12 23:16:05,906 DEBUG    root            Loaded Command Group: ['gcloud', 'auth']
+2024-05-12 23:16:05,908 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'docker_helper']
+2024-05-12 23:16:05,908 DEBUG    root            Running [gcloud.auth.docker-helper] with arguments: [METHOD: "get"]
+2024-05-12 23:16:05,912 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2024-05-12 23:16:05,913 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2024-05-12 23:16:06,028 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2024-05-12 23:16:06,033 DEBUG    root            Chosen display Format:json
+2024-05-12 23:16:06,033 INFO     root            Display format: "json"
+2024-05-12 23:16:06,034 INFO     ___FILE_ONLY___ {
+  "Secret": "ya29.a0AXooCgsSEKbJCWRmfXM3DvEO-OO9TPkKEeLX_rhs37pVfft7zLbnH59_4KqWm-yeHFzcMiXTjS9N_H6oMuS0PXCU_ibhbRqpGra4HlM_asyNlKrs_EU8LqPtynqYRs-vwz90PAzH9rMK6YWWoHxTy47YfjB_2-BFvilPZHy41kMaCgYKARISARMSFQHGX2MiBZ_AKtihSS5RWzzInr8XPQ0178",
+  "Username": "_dcgcloud_token"
+}
+2024-05-12 23:16:06,034 INFO     ___FILE_ONLY___ 
+
+2024-05-12 23:16:06,034 DEBUG    root            SDK update checks are disabled.

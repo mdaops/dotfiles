@@ -1,0 +1,10 @@
+2024-05-12 23:05:05,297 DEBUG    root            Loaded Command Group: ['gcloud', 'auth']
+2024-05-12 23:05:05,299 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'configure_docker']
+2024-05-12 23:05:05,301 DEBUG    root            Running [gcloud.auth.configure-docker] with arguments: [REGISTRIES: "eu-west1-docker.pkg.dev"]
+2024-05-12 23:05:05,378 INFO     ___FILE_ONLY___ Adding credentials for: eu-west1-docker.pkg.dev
+
+2024-05-12 23:05:05,378 WARNING  root            eu-west1-docker.pkg.dev is not a supported registry
+2024-05-12 23:05:05,378 INFO     ___FILE_ONLY___ gcloud credential helpers already registered correctly.
+
+2024-05-12 23:05:05,378 DEBUG    root            Chosen display Format:default
+2024-05-12 23:05:05,379 INFO     root            Display format: "default"

@@ -1,0 +1,41 @@
+2024-05-12 23:37:23,775 DEBUG    root            Loaded Command Group: ['gcloud', 'projects']
+2024-05-12 23:37:23,777 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'list']
+2024-05-12 23:37:23,778 DEBUG    root            Running [gcloud.projects.list] with arguments: []
+2024-05-12 23:37:23,778 INFO     root            client_filter="None" server_filter="None"
+2024-05-12 23:37:23,819 DEBUG    root            Chosen display Format:
+    table(
+      projectId:sort=1,
+      name,
+      projectNumber
+    )
+
+2024-05-12 23:37:23,820 INFO     root            Display format: "
+    table(
+      projectId:sort=1,
+      name,
+      projectNumber
+    )
+"
+2024-05-12 23:37:23,821 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2024-05-12 23:37:24,610 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects?alt=json&filter=lifecycleState%3AACTIVE&pageSize=500 HTTP/1.1" 200 None
+2024-05-12 23:37:24,612 INFO     ___FILE_ONLY___ PROJECT_ID
+2024-05-12 23:37:24,612 INFO     ___FILE_ONLY___               
+2024-05-12 23:37:24,612 INFO     ___FILE_ONLY___ NAME
+2024-05-12 23:37:24,612 INFO     ___FILE_ONLY___               
+2024-05-12 23:37:24,612 INFO     ___FILE_ONLY___ PROJECT_NUMBER
+2024-05-12 23:37:24,612 INFO     ___FILE_ONLY___ 
+
+2024-05-12 23:37:24,612 INFO     ___FILE_ONLY___ polar-column-423021-i7
+2024-05-12 23:37:24,612 INFO     ___FILE_ONLY___   
+2024-05-12 23:37:24,612 INFO     ___FILE_ONLY___ My First Project
+2024-05-12 23:37:24,612 INFO     ___FILE_ONLY___   
+2024-05-12 23:37:24,612 INFO     ___FILE_ONLY___ 265203896369
+2024-05-12 23:37:24,612 INFO     ___FILE_ONLY___ 
+
+2024-05-12 23:37:24,612 INFO     ___FILE_ONLY___ swfyi-management
+2024-05-12 23:37:24,612 INFO     ___FILE_ONLY___         
+2024-05-12 23:37:24,612 INFO     ___FILE_ONLY___ swfyi-management
+2024-05-12 23:37:24,612 INFO     ___FILE_ONLY___   
+2024-05-12 23:37:24,612 INFO     ___FILE_ONLY___ 196693689029
+2024-05-12 23:37:24,613 INFO     ___FILE_ONLY___ 
+

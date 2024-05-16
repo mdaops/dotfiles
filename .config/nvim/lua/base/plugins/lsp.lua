@@ -81,6 +81,15 @@ return { -- LSP Configuration & Plugins
     capabilities = vim.tbl_deep_extend('force', capabilities, require('cmp_nvim_lsp').default_capabilities())
 
     local servers = {
+      zls = {
+        settings = {
+          enable_autofix = true,
+          enable_inhay_hints = true,
+          inlay_hints_show_variable_type_hints = true,
+          inlay_hints_show_struct_literal_field_type = true,
+          inlay_hints_show_parameter_name = true,
+        },
+      },
       gopls = {
         settings = {
           gofumpt = true,

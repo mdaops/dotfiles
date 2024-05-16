@@ -1,0 +1,16 @@
+2024-05-12 23:26:51,957 DEBUG    root            Loaded Command Group: ['gcloud', 'auth']
+2024-05-12 23:26:51,959 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'configure_docker']
+2024-05-12 23:26:51,960 DEBUG    root            Running [gcloud.auth.configure-docker] with arguments: [REGISTRIES: "europe-west1-docker.pkg.dev"]
+2024-05-12 23:26:52,030 WARNING  root            Your config file at [/home/dev/.docker/config.json] contains these credential helper entries:
+
+{
+  "credHelpers": {
+    "europe-west1-docker.pkg.dev": "gcloud"
+  }
+}
+2024-05-12 23:26:52,030 INFO     ___FILE_ONLY___ Adding credentials for: europe-west1-docker.pkg.dev
+
+2024-05-12 23:26:52,030 INFO     ___FILE_ONLY___ gcloud credential helpers already registered correctly.
+
+2024-05-12 23:26:52,030 DEBUG    root            Chosen display Format:default
+2024-05-12 23:26:52,031 INFO     root            Display format: "default"

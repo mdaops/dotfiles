@@ -1,0 +1,13 @@
+2024-05-03 12:43:15,973 DEBUG    root            Loaded Command Group: ['gcloud', 'iam']
+2024-05-03 12:43:15,975 ERROR    root            (gcloud.iam) Command name argument expected.
+2024-05-03 12:43:15,976 DEBUG    root            Loaded Command Group: ['gcloud', 'iam', 'workforce_pools']
+2024-05-03 12:43:15,982 DEBUG    root            Loaded Command Group: ['gcloud', 'iam', 'list_testable_permissions']
+2024-05-03 12:43:15,983 DEBUG    root            Loaded Command Group: ['gcloud', 'iam', 'simulator']
+2024-05-03 12:43:15,984 DEBUG    root            Loaded Command Group: ['gcloud', 'iam', 'service_accounts']
+2024-05-03 12:43:15,985 DEBUG    root            Loaded Command Group: ['gcloud', 'iam', 'roles']
+2024-05-03 12:43:15,987 DEBUG    root            Loaded Command Group: ['gcloud', 'iam', 'list_grantable_roles']
+2024-05-03 12:43:15,988 DEBUG    root            Loaded Command Group: ['gcloud', 'iam', 'workload_identity_pools']
+2024-05-03 12:43:15,990 DEBUG    root            No implementation for release track [GA] for element: [/home/dev/google-cloud-sdk/lib/surface/iam/oauth_clients]
+2024-05-03 12:43:15,990 DEBUG    root            Loaded Command Group: ['gcloud', 'iam', 'policies']
+2024-05-03 12:43:15,991 DEBUG    root            Chosen display Format:table[no-heading,margin=6,width=80]([0]:label='':align=left:width=22,[1]:label='':align=left:wrap)
+2024-05-03 12:43:15,992 DEBUG    root            Chosen display Format:table[no-heading,margin=6,width=80]([0]:label='':align=left:width=22,[1]:label='':align=left:wrap)

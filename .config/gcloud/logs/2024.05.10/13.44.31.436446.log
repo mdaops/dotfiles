@@ -1,0 +1,23 @@
+2024-05-10 13:44:31,438 DEBUG    root            Loaded Command Group: ['gcloud', 'storage']
+2024-05-10 13:44:31,439 ERROR    root            (gcloud.storage) Command name argument expected.
+2024-05-10 13:44:31,455 DEBUG    root            No implementation for release track [GA] for element: [/home/dev/google-cloud-sdk/lib/surface/storage/list]
+2024-05-10 13:44:32,330 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'mv']
+2024-05-10 13:44:32,334 DEBUG    root            No implementation for release track [GA] for element: [/home/dev/google-cloud-sdk/lib/surface/storage/restore]
+2024-05-10 13:44:32,334 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'buckets']
+2024-05-10 13:44:32,344 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'du']
+2024-05-10 13:44:32,345 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'cp']
+2024-05-10 13:44:32,348 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'ls']
+2024-05-10 13:44:32,349 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'objects']
+2024-05-10 13:44:32,350 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'hash']
+2024-05-10 13:44:32,356 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'rsync']
+2024-05-10 13:44:32,359 DEBUG    root            No implementation for release track [GA] for element: [/home/dev/google-cloud-sdk/lib/surface/storage/delete]
+2024-05-10 13:44:32,362 DEBUG    root            No implementation for release track [GA] for element: [/home/dev/google-cloud-sdk/lib/surface/storage/copy]
+2024-05-10 13:44:32,363 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'cat']
+2024-05-10 13:44:32,364 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'hmac']
+2024-05-10 13:44:32,365 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'insights']
+2024-05-10 13:44:32,366 DEBUG    root            No implementation for release track [GA] for element: [/home/dev/google-cloud-sdk/lib/surface/storage/operations]
+2024-05-10 13:44:32,369 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'sign_url']
+2024-05-10 13:44:32,375 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'service_agent']
+2024-05-10 13:44:32,378 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'rm']
+2024-05-10 13:44:32,379 DEBUG    root            Chosen display Format:table[no-heading,margin=6,width=80]([0]:label='':align=left:width=22,[1]:label='':align=left:wrap)
+2024-05-10 13:44:32,380 DEBUG    root            Chosen display Format:table[no-heading,margin=6,width=80]([0]:label='':align=left:width=22,[1]:label='':align=left:wrap)

@@ -1,0 +1,16 @@
+2024-05-10 13:44:38,732 DEBUG    root            Loaded Command Group: ['gcloud', 'storage']
+2024-05-10 13:44:38,733 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'buckets']
+2024-05-10 13:44:38,734 ERROR    root            (gcloud.storage.buckets) Command name argument expected.
+2024-05-10 13:44:38,736 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'buckets', 'notifications']
+2024-05-10 13:44:39,324 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'buckets', 'delete']
+2024-05-10 13:44:39,327 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'buckets', 'set_iam_policy']
+2024-05-10 13:44:39,328 DEBUG    root            No implementation for release track [GA] for element: [/home/dev/google-cloud-sdk/lib/surface/storage/buckets/config]
+2024-05-10 13:44:39,329 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'buckets', 'remove_iam_policy_binding']
+2024-05-10 13:44:39,332 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'buckets', 'update']
+2024-05-10 13:44:39,334 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'buckets', 'list']
+2024-05-10 13:44:39,335 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'buckets', 'add_iam_policy_binding']
+2024-05-10 13:44:39,337 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'buckets', 'describe']
+2024-05-10 13:44:39,338 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'buckets', 'get_iam_policy']
+2024-05-10 13:44:39,339 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'buckets', 'create']
+2024-05-10 13:44:39,340 DEBUG    root            Chosen display Format:table[no-heading,margin=6,width=80]([0]:label='':align=left:width=22,[1]:label='':align=left:wrap)
+2024-05-10 13:44:39,340 DEBUG    root            Chosen display Format:table[no-heading,margin=6,width=80]([0]:label='':align=left:width=22,[1]:label='':align=left:wrap)

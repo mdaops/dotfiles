@@ -1,0 +1,7 @@
+2024-05-12 23:09:00,464 DEBUG    root            Loaded Command Group: ['gcloud', 'artifacts']
+2024-05-12 23:09:00,465 DEBUG    root            Loaded Command Group: ['gcloud', 'artifacts', 'docker']
+2024-05-12 23:09:00,466 ERROR    root            (gcloud.artifacts.docker) Command name argument expected.
+2024-05-12 23:09:00,466 DEBUG    root            Loaded Command Group: ['gcloud', 'artifacts', 'docker', 'tags']
+2024-05-12 23:09:00,467 DEBUG    root            No implementation for release track [GA] for element: [/home/dev/google-cloud-sdk/lib/surface/artifacts/docker/upgrade]
+2024-05-12 23:09:00,467 DEBUG    root            Loaded Command Group: ['gcloud', 'artifacts', 'docker', 'images']
+2024-05-12 23:09:00,468 DEBUG    root            Chosen display Format:table[no-heading,margin=6,width=80]([0]:label='':align=left:width=22,[1]:label='':align=left:wrap)

@@ -1,8 +1,11 @@
 lastupdatecheck: 0
 recentrepos:
 - /home/dev/gh/gbg/platform/loqate-gcp-projects
-- /home/dev/gh/gbg/platform/loqate-github-governance
+- /home/dev/gh/gbg/platform/loqate-location-platform
 - /home/dev/dotfiles
+- /home/dev/gh/gbg/platform/loqate-gcp-dataplex-governance
+- /home/dev/gh/sapien/bootbag
+- /home/dev/gh/gbg/platform/loqate-github-governance
 startuppopupversion: 5
 customcommandshistory:
 - q

@@ -1,0 +1,4 @@
+2024-05-10 13:45:05,686 DEBUG    root            Loaded Command Group: ['gcloud', 'storage']
+2024-05-10 13:45:05,687 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'buckets']
+2024-05-10 13:45:06,258 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'buckets', 'get_iam_policy']
+2024-05-10 13:45:06,259 ERROR    root            (gcloud.storage.buckets.get-iam-policy) argument URL: Must be specified.

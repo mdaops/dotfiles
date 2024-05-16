@@ -1,0 +1,55 @@
+2024-05-11 22:26:28,689 DEBUG    root            Loaded Command Group: ['gcloud', 'projects']
+2024-05-11 22:26:28,690 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'create']
+2024-05-11 22:26:28,691 DEBUG    root            Running [gcloud.projects.create] with arguments: [--organization: "293336062732", PROJECT_ID: "sw-management"]
+2024-05-11 22:26:28,700 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2024-05-11 22:26:29,379 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "POST /v1/projects?alt=json HTTP/1.1" 409 None
+2024-05-11 22:26:29,381 DEBUG    root            (gcloud.projects.create) Project creation failed. The project ID you specified is already in use by another project. Please try an alternative ID.
+Traceback (most recent call last):
+  File "/home/dev/google-cloud-sdk/lib/surface/projects/create.py", line 138, in Run
+    create_op = projects_api.Create(
+  File "/home/dev/google-cloud-sdk/lib/googlecloudsdk/api_lib/cloudresourcemanager/projects_api.py", line 154, in Create
+    return client.projects.Create(
+  File "/home/dev/google-cloud-sdk/lib/googlecloudsdk/generated_clients/apis/cloudresourcemanager/v1/cloudresourcemanager_v1_client.py", line 706, in Create
+    return self._RunMethod(
+  File "/home/dev/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 737, in _RunMethod
+    return self.ProcessHttpResponse(method_config, http_response, request)
+  File "/home/dev/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 743, in ProcessHttpResponse
+    self.__ProcessHttpResponse(method_config, http_response, request))
+  File "/home/dev/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 609, in __ProcessHttpResponse
+    raise exceptions.HttpError.FromResponse(
+apitools.base.py.exceptions.HttpConflictError: HttpError accessing <https://cloudresourcemanager.googleapis.com/v1/projects?alt=json>: response: <{'vary': 'Origin, X-Origin, Referer', 'content-type': 'application/json; charset=UTF-8', 'content-encoding': 'gzip', 'date': 'Sat, 11 May 2024 21:26:28 GMT', 'server': 'ESF', 'cache-control': 'private', 'x-xss-protection': '0', 'x-frame-options': 'SAMEORIGIN', 'x-content-type-options': 'nosniff', 'server-timing': 'gfet4t7; dur=608', 'alt-svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'transfer-encoding': 'chunked', 'status': 409}>, content <{
+  "error": {
+    "code": 409,
+    "message": "Requested entity already exists",
+    "status": "ALREADY_EXISTS"
+  }
+}
+>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/dev/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 987, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/home/dev/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 807, in Run
+    resources = command_instance.Run(args)
+  File "/home/dev/google-cloud-sdk/lib/surface/projects/create.py", line 148, in Run
+    core_exceptions.reraise(exceptions.HttpException(msg))
+  File "/home/dev/google-cloud-sdk/lib/googlecloudsdk/core/exceptions.py", line 146, in reraise
+    six.reraise(type(exc_value), exc_value, tb)
+  File "/home/dev/google-cloud-sdk/lib/third_party/six/__init__.py", line 718, in reraise
+    raise value.with_traceback(tb)
+  File "/home/dev/google-cloud-sdk/lib/surface/projects/create.py", line 138, in Run
+    create_op = projects_api.Create(
+  File "/home/dev/google-cloud-sdk/lib/googlecloudsdk/api_lib/cloudresourcemanager/projects_api.py", line 154, in Create
+    return client.projects.Create(
+  File "/home/dev/google-cloud-sdk/lib/googlecloudsdk/generated_clients/apis/cloudresourcemanager/v1/cloudresourcemanager_v1_client.py", line 706, in Create
+    return self._RunMethod(
+  File "/home/dev/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 737, in _RunMethod
+    return self.ProcessHttpResponse(method_config, http_response, request)
+  File "/home/dev/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 743, in ProcessHttpResponse
+    self.__ProcessHttpResponse(method_config, http_response, request))
+  File "/home/dev/google-cloud-sdk/lib/third_party/apitools/base/py/base_api.py", line 609, in __ProcessHttpResponse
+    raise exceptions.HttpError.FromResponse(
+googlecloudsdk.calliope.exceptions.HttpException: Project creation failed. The project ID you specified is already in use by another project. Please try an alternative ID.
+2024-05-11 22:26:29,384 ERROR    root            (gcloud.projects.create) Project creation failed. The project ID you specified is already in use by another project. Please try an alternative ID.

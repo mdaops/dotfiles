@@ -1,0 +1,2425 @@
+2024-05-03 12:43:59,921 DEBUG    root            Loaded Command Group: ['gcloud', 'projects']
+2024-05-03 12:43:59,926 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'get_iam_policy']
+2024-05-03 12:43:59,927 DEBUG    root            Running [gcloud.projects.get-iam-policy] with arguments: [PROJECT_ID_OR_NUMBER: "gbg-gcp-wl-lo-reach-nprod"]
+2024-05-03 12:43:59,969 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2024-05-03 12:43:59,970 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2024-05-03 12:44:00,085 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2024-05-03 12:44:00,094 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2024-05-03 12:44:00,936 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "POST /v1/projects/gbg-gcp-wl-lo-reach-nprod:getIamPolicy?alt=json HTTP/1.1" 200 None
+2024-05-03 12:44:00,940 DEBUG    root            Chosen display Format:default
+2024-05-03 12:44:00,940 INFO     root            Display format: "default"
+2024-05-03 12:44:00,945 INFO     ___FILE_ONLY___ bindings
+2024-05-03 12:44:00,946 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,946 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,946 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,946 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,946 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:00,946 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,946 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,946 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,946 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,946 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,946 INFO     ___FILE_ONLY___ serviceAccount:dev-euw1-vector-sa@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,946 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,946 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,946 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:00,946 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,946 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,946 INFO     ___FILE_ONLY___ projects/gbg-gcp-wl-lo-reach-nprod/roles/dev_euw1_vector_sa
+2024-05-03 12:44:00,946 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,946 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,946 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,946 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:00,947 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,947 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,947 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,947 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,947 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,947 INFO     ___FILE_ONLY___ serviceAccount:jira-function-nprod-access@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,947 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,947 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,947 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:00,947 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,947 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,947 INFO     ___FILE_ONLY___ projects/gbg-gcp-wl-lo-reach-nprod/roles/dev_us_east4_vpc_sc
+2024-05-03 12:44:00,947 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,947 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,947 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,947 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:00,947 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,947 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,947 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,947 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,947 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,947 INFO     ___FILE_ONLY___ serviceAccount:dev-use4-vector-sa@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,948 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,948 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,948 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:00,948 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,948 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,948 INFO     ___FILE_ONLY___ projects/gbg-gcp-wl-lo-reach-nprod/roles/dev_use4_vector_sa
+2024-05-03 12:44:00,948 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,948 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,948 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,948 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:00,948 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,948 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,948 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,948 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,948 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,948 INFO     ___FILE_ONLY___ serviceAccount:stg-euw1-vector-sa@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,948 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,948 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,948 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:00,948 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,949 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,949 INFO     ___FILE_ONLY___ projects/gbg-gcp-wl-lo-reach-nprod/roles/stg_euw1_vector_sa
+2024-05-03 12:44:00,949 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,949 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,949 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,949 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:00,949 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,949 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,949 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,949 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,949 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,949 INFO     ___FILE_ONLY___ serviceAccount:stg-use4-vector-sa@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,949 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,949 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,949 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:00,949 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,949 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,949 INFO     ___FILE_ONLY___ projects/gbg-gcp-wl-lo-reach-nprod/roles/stg_use4_vector_sa
+2024-05-03 12:44:00,949 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,949 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,949 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,949 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:00,950 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,950 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,950 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,950 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,950 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,950 INFO     ___FILE_ONLY___ serviceAccount:service-885587383631@gcp-sa-aiplatform.iam.gserviceaccount.com
+2024-05-03 12:44:00,950 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,950 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,950 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:00,950 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,950 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,950 INFO     ___FILE_ONLY___ roles/aiplatform.serviceAgent
+2024-05-03 12:44:00,950 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,950 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,950 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,950 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:00,950 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,950 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,950 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,950 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,950 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,951 INFO     ___FILE_ONLY___ serviceAccount:dev-europe-west1-ado-verify-sa@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,951 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,951 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,951 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,951 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,951 INFO     ___FILE_ONLY___ serviceAccount:dev-gcr-read@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,951 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,951 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,951 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,951 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,951 INFO     ___FILE_ONLY___ serviceAccount:dev-us-east4-ado-verify-sa@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,951 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,951 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,951 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,951 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,951 INFO     ___FILE_ONLY___ serviceAccount:k8s-16a1fcb037f1a5c0549c39c105@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,951 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,951 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,951 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,952 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,952 INFO     ___FILE_ONLY___ serviceAccount:k8s-3505a7dea458bf110de516a416@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,952 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,952 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,952 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,952 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,952 INFO     ___FILE_ONLY___ serviceAccount:k8s-64e9206e648ba39b182914c3d5@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,952 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,952 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,952 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,952 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,952 INFO     ___FILE_ONLY___ serviceAccount:k8s-690653be98549880a29462b8c4@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,952 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,952 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,952 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,952 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,952 INFO     ___FILE_ONLY___ serviceAccount:k8s-94870d52a610c7b66f1186ccc3@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,952 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,952 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,952 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,952 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,952 INFO     ___FILE_ONLY___ serviceAccount:k8s-97df11432563512ff43234862f@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,952 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,953 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,953 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,953 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,953 INFO     ___FILE_ONLY___ serviceAccount:k8s-b43abf871a0678670837bd4555@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,953 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,953 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,953 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,953 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,953 INFO     ___FILE_ONLY___ serviceAccount:k8s-d4dd27bee86b2c3549fc472726@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,953 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,953 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,953 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,953 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,953 INFO     ___FILE_ONLY___ serviceAccount:stg-europe-west1-ado-verify-sa@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,953 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,953 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,953 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,953 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,953 INFO     ___FILE_ONLY___ serviceAccount:stg-gcr-read@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,953 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,953 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,953 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,953 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,954 INFO     ___FILE_ONLY___ serviceAccount:stg-us-east4-ado-verify-sa@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,954 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,954 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,954 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:00,954 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,954 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,954 INFO     ___FILE_ONLY___ roles/artifactregistry.reader
+2024-05-03 12:44:00,954 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,954 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,954 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,954 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:00,954 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,954 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,954 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,954 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,954 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,954 INFO     ___FILE_ONLY___ serviceAccount:service-885587383631@gcp-sa-artifactregistry.iam.gserviceaccount.com
+2024-05-03 12:44:00,954 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,954 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,954 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:00,954 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,954 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,954 INFO     ___FILE_ONLY___ roles/artifactregistry.serviceAgent
+2024-05-03 12:44:00,955 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,955 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,955 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,955 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:00,955 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,955 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,955 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,955 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,955 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,955 INFO     ___FILE_ONLY___ serviceAccount:dev-europe-west1-ado-verify-sa@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,955 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,955 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,955 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,955 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,955 INFO     ___FILE_ONLY___ serviceAccount:dev-gcr-write@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,955 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,955 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,955 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,955 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,955 INFO     ___FILE_ONLY___ serviceAccount:dev-us-east4-ado-verify-sa@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,955 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,955 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,955 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,955 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,955 INFO     ___FILE_ONLY___ serviceAccount:dfp-artifact-repository-sa@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,956 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,956 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,956 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,956 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,956 INFO     ___FILE_ONLY___ serviceAccount:stg-europe-west1-ado-verify-sa@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,956 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,956 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,956 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,956 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,956 INFO     ___FILE_ONLY___ serviceAccount:stg-gcr-write@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,956 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,956 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,956 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,956 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,956 INFO     ___FILE_ONLY___ serviceAccount:stg-us-east4-ado-verify-sa@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,956 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,956 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,956 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:00,956 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,956 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,956 INFO     ___FILE_ONLY___ roles/artifactregistry.writer
+2024-05-03 12:44:00,956 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,956 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,957 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,957 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:00,957 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,957 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,957 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,957 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,957 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,957 INFO     ___FILE_ONLY___ serviceAccount:usage-listener-bq-staging@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,957 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,957 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,957 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:00,957 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,957 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,957 INFO     ___FILE_ONLY___ roles/bigquery.admin
+2024-05-03 12:44:00,957 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,957 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,957 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,957 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:00,957 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,957 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,957 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,957 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,957 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,957 INFO     ___FILE_ONLY___ deleted:serviceAccount:export-000000ce311f154f-6245@gcp-sa-cloud-trace.iam.gserviceaccount.com?uid=111851430696901123297
+2024-05-03 12:44:00,958 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,958 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,958 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,958 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,958 INFO     ___FILE_ONLY___ serviceAccount:accounts-bq-dev-ci@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,958 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,958 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,958 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,958 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,958 INFO     ___FILE_ONLY___ serviceAccount:accounts-bq-qa@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,958 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,958 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,958 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,958 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,958 INFO     ___FILE_ONLY___ serviceAccount:accounts-bq-staging@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,958 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,958 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,958 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,958 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,958 INFO     ___FILE_ONLY___ serviceAccount:export-000000ce311f154f-2745@gcp-sa-cloud-trace.iam.gserviceaccount.com
+2024-05-03 12:44:00,958 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,958 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,958 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,958 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,959 INFO     ___FILE_ONLY___ serviceAccount:service-885587383631@gcp-sa-pubsub.iam.gserviceaccount.com
+2024-05-03 12:44:00,959 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,959 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,959 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,959 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,959 INFO     ___FILE_ONLY___ serviceAccount:usage-listener-bq-dev-ci@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,959 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,959 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,959 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,959 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,959 INFO     ___FILE_ONLY___ serviceAccount:usage-listener-bq-qa@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,959 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,959 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,959 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,959 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,959 INFO     ___FILE_ONLY___ serviceAccount:usage-listener-bq-staging@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,959 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,959 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,959 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:00,959 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,959 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,959 INFO     ___FILE_ONLY___ roles/bigquery.dataEditor
+2024-05-03 12:44:00,960 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,960 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,960 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,960 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:00,960 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,960 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,960 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,960 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,960 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,960 INFO     ___FILE_ONLY___ group:gcp-developers@gbgplatforms.com
+2024-05-03 12:44:00,960 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,960 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,960 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:00,960 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,960 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,960 INFO     ___FILE_ONLY___ roles/bigquery.dataViewer
+2024-05-03 12:44:00,960 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,960 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,960 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,960 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:00,960 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,960 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,960 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,960 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,960 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,961 INFO     ___FILE_ONLY___ serviceAccount:accounts-bq-dev-ci@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,961 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,961 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,961 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,961 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,961 INFO     ___FILE_ONLY___ serviceAccount:accounts-bq-qa@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,961 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,961 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,961 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,961 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,961 INFO     ___FILE_ONLY___ serviceAccount:accounts-bq-staging@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,961 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,961 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,961 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,961 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,961 INFO     ___FILE_ONLY___ serviceAccount:usage-listener-bq-dev-ci@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,961 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,961 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,961 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,961 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,961 INFO     ___FILE_ONLY___ serviceAccount:usage-listener-bq-qa@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,961 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,962 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,962 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,962 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,962 INFO     ___FILE_ONLY___ serviceAccount:usage-listener-bq-staging@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,962 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,962 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,962 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:00,962 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,962 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,962 INFO     ___FILE_ONLY___ roles/bigquery.jobUser
+2024-05-03 12:44:00,962 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,962 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,962 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,962 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:00,962 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,962 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,962 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,962 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,962 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,962 INFO     ___FILE_ONLY___ group:gcp-developers@gbgplatforms.com
+2024-05-03 12:44:00,962 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,962 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,962 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:00,962 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,962 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,963 INFO     ___FILE_ONLY___ roles/bigquery.resourceViewer
+2024-05-03 12:44:00,963 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,963 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,963 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,963 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:00,963 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,963 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,963 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,963 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,963 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,963 INFO     ___FILE_ONLY___ serviceAccount:service-885587383631@gcp-sa-bigquerydatatransfer.iam.gserviceaccount.com
+2024-05-03 12:44:00,963 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,963 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,963 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:00,963 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,963 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,963 INFO     ___FILE_ONLY___ roles/bigquerydatatransfer.serviceAgent
+2024-05-03 12:44:00,963 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,963 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,963 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,963 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:00,963 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,963 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,963 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,964 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,964 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,964 INFO     ___FILE_ONLY___ serviceAccount:service-885587383631@gcp-sa-binaryauthorization.iam.gserviceaccount.com
+2024-05-03 12:44:00,964 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,964 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,964 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:00,964 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,964 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,964 INFO     ___FILE_ONLY___ roles/binaryauthorization.serviceAgent
+2024-05-03 12:44:00,964 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,964 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,964 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,964 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:00,964 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,964 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,964 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,964 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,964 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,964 INFO     ___FILE_ONLY___ user:matthew.garde@gbgplatforms.com
+2024-05-03 12:44:00,964 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,964 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,964 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:00,964 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,964 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,964 INFO     ___FILE_ONLY___ roles/cloudasset.viewer
+2024-05-03 12:44:00,965 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,965 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,965 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,965 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:00,965 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,965 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,965 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,965 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,965 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,965 INFO     ___FILE_ONLY___ serviceAccount:885587383631@cloudbuild.gserviceaccount.com
+2024-05-03 12:44:00,965 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,965 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,965 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:00,965 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,965 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,965 INFO     ___FILE_ONLY___ roles/cloudbuild.builds.builder
+2024-05-03 12:44:00,965 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,965 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,965 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,965 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:00,965 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,965 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,965 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,965 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,966 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,966 INFO     ___FILE_ONLY___ serviceAccount:service-885587383631@gcp-sa-cloudbuild.iam.gserviceaccount.com
+2024-05-03 12:44:00,966 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,966 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,966 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:00,966 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,966 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,966 INFO     ___FILE_ONLY___ roles/cloudbuild.serviceAgent
+2024-05-03 12:44:00,966 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,966 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,966 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,966 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:00,966 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,966 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,966 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,966 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,966 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,966 INFO     ___FILE_ONLY___ group:gcp-developers@gbgplatforms.com
+2024-05-03 12:44:00,966 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,966 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,966 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:00,966 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,966 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,966 INFO     ___FILE_ONLY___ roles/cloudfunctions.developer
+2024-05-03 12:44:00,967 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,967 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,967 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,967 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:00,967 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,967 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,967 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,967 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,967 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,967 INFO     ___FILE_ONLY___ serviceAccount:service-885587383631@gcf-admin-robot.iam.gserviceaccount.com
+2024-05-03 12:44:00,967 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,967 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,967 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,967 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,967 INFO     ___FILE_ONLY___ serviceAccount:service-904503940172@serverless-robot-prod.iam.gserviceaccount.com
+2024-05-03 12:44:00,967 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,967 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,967 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:00,967 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,967 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,967 INFO     ___FILE_ONLY___ roles/cloudfunctions.serviceAgent
+2024-05-03 12:44:00,967 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,967 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,967 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,967 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:00,968 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,968 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,968 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,968 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,968 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,968 INFO     ___FILE_ONLY___ serviceAccount:service-885587383631@gcp-sa-cloudkms.iam.gserviceaccount.com
+2024-05-03 12:44:00,968 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,968 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,968 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:00,968 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,968 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,968 INFO     ___FILE_ONLY___ roles/cloudkms.serviceAgent
+2024-05-03 12:44:00,968 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,968 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,968 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,968 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:00,968 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,968 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,968 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,968 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,968 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,968 INFO     ___FILE_ONLY___ serviceAccount:service-885587383631@gcp-sa-cloudscheduler.iam.gserviceaccount.com
+2024-05-03 12:44:00,968 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,969 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,969 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:00,969 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,969 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,969 INFO     ___FILE_ONLY___ roles/cloudscheduler.serviceAgent
+2024-05-03 12:44:00,969 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,969 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,969 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,969 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:00,969 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,969 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,969 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,969 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,969 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,969 INFO     ___FILE_ONLY___ group:gcp-developers@gbgplatforms.com
+2024-05-03 12:44:00,969 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,969 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,969 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:00,969 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,969 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,969 INFO     ___FILE_ONLY___ roles/cloudsql.admin
+2024-05-03 12:44:00,969 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,969 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,969 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,969 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:00,970 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,970 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,970 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,970 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,970 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,970 INFO     ___FILE_ONLY___ serviceAccount:usage-listener-bq-dev-ci@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,970 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,970 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,970 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,970 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,970 INFO     ___FILE_ONLY___ serviceAccount:usage-listener-bq-qa@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,970 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,970 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,970 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,970 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,970 INFO     ___FILE_ONLY___ serviceAccount:usage-listener-bq-staging@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,970 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,970 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,970 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:00,970 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,970 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,970 INFO     ___FILE_ONLY___ roles/cloudtrace.admin
+2024-05-03 12:44:00,970 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,970 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,971 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,971 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:00,971 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,971 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,971 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,971 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,971 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,971 INFO     ___FILE_ONLY___ serviceAccount:dev-europe-west1-k8s-otel@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,971 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,971 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,971 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,971 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,971 INFO     ___FILE_ONLY___ serviceAccount:dev-us-east4-k8s-otel@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,971 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,971 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,971 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,971 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,971 INFO     ___FILE_ONLY___ serviceAccount:stg-europe-west1-k8s-otel@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,971 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,971 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,971 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,971 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,972 INFO     ___FILE_ONLY___ serviceAccount:stg-us-east4-k8s-otel@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,972 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,972 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,972 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,972 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,972 INFO     ___FILE_ONLY___ serviceAccount:temporary-tracing-please-del@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,972 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,972 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,972 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:00,972 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,972 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,972 INFO     ___FILE_ONLY___ roles/cloudtrace.agent
+2024-05-03 12:44:00,972 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,972 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,972 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,972 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:00,972 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,972 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,972 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,972 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,972 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,972 INFO     ___FILE_ONLY___ serviceAccount:885587383631@cloudbuild.gserviceaccount.com
+2024-05-03 12:44:00,972 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,972 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,972 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:00,973 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,973 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,973 INFO     ___FILE_ONLY___ roles/compute.admin
+2024-05-03 12:44:00,973 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,973 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,973 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,973 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:00,973 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,973 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,973 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,973 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,973 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,973 INFO     ___FILE_ONLY___ group:gcp-developers@gbgplatforms.com
+2024-05-03 12:44:00,973 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,973 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,973 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:00,973 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,973 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,973 INFO     ___FILE_ONLY___ roles/compute.instanceAdmin.v1
+2024-05-03 12:44:00,973 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,973 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,973 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,973 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:00,973 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,973 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,974 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,974 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,974 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,974 INFO     ___FILE_ONLY___ user:dominic.cooper@gbgplatforms.com
+2024-05-03 12:44:00,974 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,974 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,974 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,974 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,974 INFO     ___FILE_ONLY___ user:matthew.garde@gbgplatforms.com
+2024-05-03 12:44:00,974 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,974 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,974 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:00,974 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,974 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,974 INFO     ___FILE_ONLY___ roles/compute.loadBalancerAdmin
+2024-05-03 12:44:00,974 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,974 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,974 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,974 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:00,974 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,974 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,974 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,974 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,974 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,974 INFO     ___FILE_ONLY___ user:dominic.cooper@gbgplatforms.com
+2024-05-03 12:44:00,975 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,975 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,975 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,975 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,975 INFO     ___FILE_ONLY___ user:matthew.garde@gbgplatforms.com
+2024-05-03 12:44:00,975 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,975 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,975 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:00,975 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,975 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,975 INFO     ___FILE_ONLY___ roles/compute.networkAdmin
+2024-05-03 12:44:00,975 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,975 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,975 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,975 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:00,975 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,975 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,975 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,975 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,976 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,976 INFO     ___FILE_ONLY___ group:gcp-developers@gbgplatforms.com
+2024-05-03 12:44:00,976 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,976 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,976 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:00,976 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,976 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,976 INFO     ___FILE_ONLY___ roles/compute.osLogin
+2024-05-03 12:44:00,976 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,976 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,976 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,976 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:00,976 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,976 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,976 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,976 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,976 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,976 INFO     ___FILE_ONLY___ serviceAccount:service-885587383631@compute-system.iam.gserviceaccount.com
+2024-05-03 12:44:00,976 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,976 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,976 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:00,977 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,977 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,977 INFO     ___FILE_ONLY___ roles/compute.serviceAgent
+2024-05-03 12:44:00,977 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,977 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,977 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,977 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:00,977 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,977 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,977 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,977 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,977 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,977 INFO     ___FILE_ONLY___ serviceAccount:dev-europe-west1-ado-verify-sa@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,977 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,977 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,977 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,977 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,977 INFO     ___FILE_ONLY___ serviceAccount:dev-us-east4-ado-verify-sa@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,977 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,977 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,977 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,978 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,978 INFO     ___FILE_ONLY___ serviceAccount:dev-use4-bastion-sa@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,978 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,978 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,978 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,978 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,978 INFO     ___FILE_ONLY___ serviceAccount:stg-europe-west1-ado-verify-sa@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,978 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,978 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,978 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,978 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,978 INFO     ___FILE_ONLY___ serviceAccount:stg-us-east4-ado-verify-sa@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,978 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,978 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,978 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:00,978 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,978 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,978 INFO     ___FILE_ONLY___ roles/compute.storageAdmin
+2024-05-03 12:44:00,978 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,978 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,979 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,979 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:00,979 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,979 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,979 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,979 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,979 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,979 INFO     ___FILE_ONLY___ serviceAccount:885587383631-compute@developer.gserviceaccount.com
+2024-05-03 12:44:00,979 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,979 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,979 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,979 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,979 INFO     ___FILE_ONLY___ serviceAccount:dev-europe-west1-ado-verify-sa@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,979 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,979 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,979 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,979 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,979 INFO     ___FILE_ONLY___ serviceAccount:dev-us-east4-ado-verify-sa@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,979 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,979 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,979 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,980 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,980 INFO     ___FILE_ONLY___ serviceAccount:service-885587383631@container-engine-robot.iam.gserviceaccount.com
+2024-05-03 12:44:00,980 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,980 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,980 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,980 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,980 INFO     ___FILE_ONLY___ serviceAccount:stg-europe-west1-ado-verify-sa@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,980 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,980 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,980 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,980 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,980 INFO     ___FILE_ONLY___ serviceAccount:stg-us-east4-ado-verify-sa@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,980 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,980 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,980 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:00,980 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,980 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,980 INFO     ___FILE_ONLY___ roles/container.admin
+2024-05-03 12:44:00,980 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,980 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,981 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,981 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:00,981 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,981 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,981 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,981 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,981 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,981 INFO     ___FILE_ONLY___ group:gcp-loqate-tech-leads@gbgplatforms.com
+2024-05-03 12:44:00,981 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,981 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,981 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:00,981 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,981 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,981 INFO     ___FILE_ONLY___ roles/container.clusterAdmin
+2024-05-03 12:44:00,981 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,981 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,981 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,981 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:00,981 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,981 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,981 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,982 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,982 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,982 INFO     ___FILE_ONLY___ principal://iam.googleapis.com/projects/885587383631/locations/global/workloadIdentityPools/gbg-gcp-wl-lo-reach-nprod.svc.id.goog/subject/ns/value-added-services/sa/test-workload-identity
+2024-05-03 12:44:00,982 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,982 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,982 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:00,982 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,982 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,982 INFO     ___FILE_ONLY___ roles/container.clusterViewer
+2024-05-03 12:44:00,982 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,982 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,982 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,982 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:00,982 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,982 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,982 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,982 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,982 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,982 INFO     ___FILE_ONLY___ group:gcp-developers@gbgplatforms.com
+2024-05-03 12:44:00,982 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,983 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,983 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:00,983 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,983 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,983 INFO     ___FILE_ONLY___ roles/container.developer
+2024-05-03 12:44:00,983 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,983 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,983 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,983 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:00,983 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,983 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,983 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,983 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,983 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,983 INFO     ___FILE_ONLY___ serviceAccount:service-885587383631@gcp-sa-gkenode.iam.gserviceaccount.com
+2024-05-03 12:44:00,983 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,983 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,983 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:00,983 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,983 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,983 INFO     ___FILE_ONLY___ roles/container.nodeServiceAgent
+2024-05-03 12:44:00,984 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,984 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,984 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,984 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:00,984 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,984 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,984 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,984 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,984 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,984 INFO     ___FILE_ONLY___ serviceAccount:service-885587383631@container-engine-robot.iam.gserviceaccount.com
+2024-05-03 12:44:00,984 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,984 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,984 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:00,984 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,984 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,984 INFO     ___FILE_ONLY___ roles/container.serviceAgent
+2024-05-03 12:44:00,984 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,984 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,984 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,984 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:00,984 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,985 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,985 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,985 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,985 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,985 INFO     ___FILE_ONLY___ serviceAccount:service-885587383631@container-analysis.iam.gserviceaccount.com
+2024-05-03 12:44:00,985 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,985 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,985 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:00,985 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,985 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,985 INFO     ___FILE_ONLY___ roles/containeranalysis.ServiceAgent
+2024-05-03 12:44:00,985 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,985 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,985 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,985 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:00,985 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,985 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,985 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,985 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,985 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,985 INFO     ___FILE_ONLY___ serviceAccount:dev-europe-west1-ado-verify-sa@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,986 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,986 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,986 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,986 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,986 INFO     ___FILE_ONLY___ serviceAccount:dev-us-east4-ado-verify-sa@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,986 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,986 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,986 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,986 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,986 INFO     ___FILE_ONLY___ serviceAccount:service-885587383631@containerregistry.iam.gserviceaccount.com
+2024-05-03 12:44:00,986 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,986 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,986 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,986 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,986 INFO     ___FILE_ONLY___ serviceAccount:stg-europe-west1-ado-verify-sa@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,986 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,986 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,986 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,986 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,986 INFO     ___FILE_ONLY___ serviceAccount:stg-us-east4-ado-verify-sa@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,987 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,987 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,987 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:00,987 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,987 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,987 INFO     ___FILE_ONLY___ roles/containerregistry.ServiceAgent
+2024-05-03 12:44:00,987 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,987 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,987 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,987 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:00,987 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,987 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,987 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,987 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,987 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,987 INFO     ___FILE_ONLY___ serviceAccount:service-885587383631@gcp-sa-containerscanning.iam.gserviceaccount.com
+2024-05-03 12:44:00,987 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,987 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,987 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:00,987 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,987 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,988 INFO     ___FILE_ONLY___ roles/containerscanning.ServiceAgent
+2024-05-03 12:44:00,988 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,988 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,988 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,988 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:00,988 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,988 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,988 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,988 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,988 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,988 INFO     ___FILE_ONLY___ serviceAccount:service-885587383631@dataflow-service-producer-prod.iam.gserviceaccount.com
+2024-05-03 12:44:00,988 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,988 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,988 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:00,988 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,988 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,988 INFO     ___FILE_ONLY___ roles/dataflow.serviceAgent
+2024-05-03 12:44:00,988 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,988 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,988 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,988 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:00,989 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,989 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,989 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,989 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,989 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,989 INFO     ___FILE_ONLY___ serviceAccount:885587383631-compute@developer.gserviceaccount.com
+2024-05-03 12:44:00,989 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,989 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,989 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,989 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,989 INFO     ___FILE_ONLY___ serviceAccount:885587383631@cloudservices.gserviceaccount.com
+2024-05-03 12:44:00,989 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,989 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,989 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,989 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,989 INFO     ___FILE_ONLY___ serviceAccount:gbg-gcp-wl-lo-reach-nprod@appspot.gserviceaccount.com
+2024-05-03 12:44:00,989 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,989 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,989 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:00,989 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,989 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,989 INFO     ___FILE_ONLY___ roles/editor
+2024-05-03 12:44:00,989 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,990 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,990 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,990 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:00,990 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,990 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,990 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,990 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,990 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,990 INFO     ___FILE_ONLY___ group:gcp-developers@gbgplatforms.com
+2024-05-03 12:44:00,990 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,990 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,990 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:00,990 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,990 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,990 INFO     ___FILE_ONLY___ roles/errorreporting.user
+2024-05-03 12:44:00,990 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,990 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,990 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,990 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:00,990 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,990 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,991 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,991 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,991 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,991 INFO     ___FILE_ONLY___ serviceAccount:service-885587383631@cloud-filer.iam.gserviceaccount.com
+2024-05-03 12:44:00,991 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,991 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,991 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:00,991 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,991 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,991 INFO     ___FILE_ONLY___ roles/file.serviceAgent
+2024-05-03 12:44:00,991 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,991 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,991 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,991 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:00,991 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,991 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,991 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,991 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,991 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,991 INFO     ___FILE_ONLY___ group:gcp-developers@gbgplatforms.com
+2024-05-03 12:44:00,991 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,992 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,992 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:00,992 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,992 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,992 INFO     ___FILE_ONLY___ roles/iam.serviceAccountCreator
+2024-05-03 12:44:00,992 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,992 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,992 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,992 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:00,992 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,992 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,992 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,992 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,992 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,992 INFO     ___FILE_ONLY___ group:gcp-developers@gbgplatforms.com
+2024-05-03 12:44:00,992 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,992 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,992 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,992 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,992 INFO     ___FILE_ONLY___ serviceAccount:dev-europe-west1-ado-ngv@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,992 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,992 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,993 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,993 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,993 INFO     ___FILE_ONLY___ serviceAccount:dev-us-east4-ado-ngv@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,993 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,993 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,993 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,993 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,993 INFO     ___FILE_ONLY___ serviceAccount:stg-europe-west1-ado-ngv@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,993 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,993 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,993 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,993 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,993 INFO     ___FILE_ONLY___ serviceAccount:stg-us-east4-ado-ngv@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,993 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,993 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,993 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:00,993 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,993 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,993 INFO     ___FILE_ONLY___ roles/iam.serviceAccountUser
+2024-05-03 12:44:00,993 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,993 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,994 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,994 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:00,994 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,994 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,994 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,994 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,994 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,994 INFO     ___FILE_ONLY___ group:gcp-developers@gbgplatforms.com
+2024-05-03 12:44:00,994 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,994 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,994 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:00,994 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,994 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,994 INFO     ___FILE_ONLY___ roles/iap.tunnelResourceAccessor
+2024-05-03 12:44:00,994 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,994 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,994 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,994 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:00,994 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,994 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,994 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,994 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,995 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,995 INFO     ___FILE_ONLY___ principalSet://iam.googleapis.com/projects/67082875770/locations/global/workloadIdentityPools/lo-location-wif/attribute.repository/gbgplc-internal/loqate-location-platform
+2024-05-03 12:44:00,995 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,995 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,995 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:00,995 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,995 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,995 INFO     ___FILE_ONLY___ roles/logging.configWriter
+2024-05-03 12:44:00,995 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,995 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,995 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,995 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:00,995 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,995 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,995 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,995 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,995 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,995 INFO     ___FILE_ONLY___ serviceAccount:dev-us-east4-dfp-dapr-sa@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,995 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,995 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,996 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,996 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,996 INFO     ___FILE_ONLY___ serviceAccount:k8s-16a1fcb037f1a5c0549c39c105@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,996 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,996 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,996 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,996 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,996 INFO     ___FILE_ONLY___ serviceAccount:k8s-3505a7dea458bf110de516a416@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,996 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,996 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,996 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,996 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,996 INFO     ___FILE_ONLY___ serviceAccount:k8s-64e9206e648ba39b182914c3d5@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,996 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,996 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,996 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,996 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,996 INFO     ___FILE_ONLY___ serviceAccount:k8s-690653be98549880a29462b8c4@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,996 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,996 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,996 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,997 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,997 INFO     ___FILE_ONLY___ serviceAccount:k8s-94870d52a610c7b66f1186ccc3@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,997 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,997 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,997 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,997 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,997 INFO     ___FILE_ONLY___ serviceAccount:k8s-97df11432563512ff43234862f@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,997 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,997 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,997 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,997 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,997 INFO     ___FILE_ONLY___ serviceAccount:k8s-b43abf871a0678670837bd4555@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,997 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,997 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,997 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,997 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,997 INFO     ___FILE_ONLY___ serviceAccount:k8s-d4dd27bee86b2c3549fc472726@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:00,997 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,997 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,997 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:00,998 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,998 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,998 INFO     ___FILE_ONLY___ roles/logging.logWriter
+2024-05-03 12:44:00,998 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,998 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,998 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,998 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:00,998 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,998 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,998 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,998 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,998 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,998 INFO     ___FILE_ONLY___ serviceAccount:service-885587383631@gcp-sa-logging.iam.gserviceaccount.com
+2024-05-03 12:44:00,998 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,998 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,998 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:00,998 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,998 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,998 INFO     ___FILE_ONLY___ roles/logging.serviceAgent
+2024-05-03 12:44:00,998 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,998 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,998 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,999 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:00,999 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,999 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,999 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,999 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,999 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,999 INFO     ___FILE_ONLY___ principalSet://iam.googleapis.com/projects/991084343391/locations/global/workloadIdentityPools/lo-monitoring-wif/attribute.repository/gbgplc-internal/loqate-observability
+2024-05-03 12:44:00,999 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,999 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,999 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:00,999 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,999 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,999 INFO     ___FILE_ONLY___ roles/monitoring.admin
+2024-05-03 12:44:00,999 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,999 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:00,999 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:00,999 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:00,999 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:00,999 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:00,999 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:00,999 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,000 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,000 INFO     ___FILE_ONLY___ group:gcp-developers@gbgplatforms.com
+2024-05-03 12:44:01,000 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,000 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,000 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:01,000 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,000 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,000 INFO     ___FILE_ONLY___ roles/monitoring.alertPolicyEditor
+2024-05-03 12:44:01,000 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,000 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,000 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,000 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:01,000 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,000 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,000 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,000 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,000 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,000 INFO     ___FILE_ONLY___ group:gcp-developers@gbgplatforms.com
+2024-05-03 12:44:01,000 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,000 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,000 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:01,000 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,001 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,001 INFO     ___FILE_ONLY___ roles/monitoring.dashboardEditor
+2024-05-03 12:44:01,001 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,001 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,001 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,001 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:01,001 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,001 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,001 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,001 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,001 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,001 INFO     ___FILE_ONLY___ group:gcp-developers@gbgplatforms.com
+2024-05-03 12:44:01,001 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,001 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,001 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:01,001 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,001 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,001 INFO     ___FILE_ONLY___ roles/monitoring.editor
+2024-05-03 12:44:01,001 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,001 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,001 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,001 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:01,002 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,002 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,002 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,002 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,002 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,002 INFO     ___FILE_ONLY___ serviceAccount:k8s-16a1fcb037f1a5c0549c39c105@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,002 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,002 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,002 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,002 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,002 INFO     ___FILE_ONLY___ serviceAccount:k8s-3505a7dea458bf110de516a416@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,002 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,002 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,002 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,002 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,002 INFO     ___FILE_ONLY___ serviceAccount:k8s-64e9206e648ba39b182914c3d5@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,002 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,002 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,002 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,002 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,002 INFO     ___FILE_ONLY___ serviceAccount:k8s-690653be98549880a29462b8c4@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,003 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,003 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,003 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,003 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,003 INFO     ___FILE_ONLY___ serviceAccount:k8s-94870d52a610c7b66f1186ccc3@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,003 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,003 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,003 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,003 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,003 INFO     ___FILE_ONLY___ serviceAccount:k8s-97df11432563512ff43234862f@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,003 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,003 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,003 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,003 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,003 INFO     ___FILE_ONLY___ serviceAccount:k8s-b43abf871a0678670837bd4555@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,003 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,003 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,003 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,003 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,003 INFO     ___FILE_ONLY___ serviceAccount:k8s-d4dd27bee86b2c3549fc472726@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,003 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,004 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,004 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:01,004 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,004 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,004 INFO     ___FILE_ONLY___ roles/monitoring.metricWriter
+2024-05-03 12:44:01,004 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,004 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,004 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,004 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:01,004 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,004 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,004 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,004 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,004 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,004 INFO     ___FILE_ONLY___ serviceAccount:service-885587383631@gcp-sa-monitoring-notification.iam.gserviceaccount.com
+2024-05-03 12:44:01,004 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,004 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,004 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:01,004 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,004 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,004 INFO     ___FILE_ONLY___ roles/monitoring.notificationServiceAgent
+2024-05-03 12:44:01,005 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,005 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,005 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,005 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:01,005 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,005 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,005 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,005 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,005 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,005 INFO     ___FILE_ONLY___ serviceAccount:k8s-16a1fcb037f1a5c0549c39c105@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,005 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,005 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,005 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,005 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,005 INFO     ___FILE_ONLY___ serviceAccount:k8s-3505a7dea458bf110de516a416@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,005 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,005 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,005 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,005 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,005 INFO     ___FILE_ONLY___ serviceAccount:k8s-64e9206e648ba39b182914c3d5@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,005 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,006 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,006 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,006 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,006 INFO     ___FILE_ONLY___ serviceAccount:k8s-690653be98549880a29462b8c4@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,006 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,006 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,006 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,006 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,006 INFO     ___FILE_ONLY___ serviceAccount:k8s-94870d52a610c7b66f1186ccc3@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,006 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,006 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,006 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,006 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,006 INFO     ___FILE_ONLY___ serviceAccount:k8s-97df11432563512ff43234862f@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,006 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,006 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,007 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,007 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,007 INFO     ___FILE_ONLY___ serviceAccount:k8s-b43abf871a0678670837bd4555@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,007 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,007 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,007 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,007 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,007 INFO     ___FILE_ONLY___ serviceAccount:k8s-d4dd27bee86b2c3549fc472726@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,007 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,007 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,007 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:01,007 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,007 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,008 INFO     ___FILE_ONLY___ roles/monitoring.viewer
+2024-05-03 12:44:01,008 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,008 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,008 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,008 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:01,008 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,008 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,008 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,008 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,008 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,008 INFO     ___FILE_ONLY___ serviceAccount:service-885587383631@gcp-sa-networkmanagement.iam.gserviceaccount.com
+2024-05-03 12:44:01,008 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,008 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,008 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:01,008 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,008 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,008 INFO     ___FILE_ONLY___ roles/networkmanagement.serviceAgent
+2024-05-03 12:44:01,008 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,008 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,008 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,009 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:01,009 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,009 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,009 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,009 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,009 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,009 INFO     ___FILE_ONLY___ serviceAccount:service-885587383631@gcp-sa-notebooks.iam.gserviceaccount.com
+2024-05-03 12:44:01,009 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,009 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,009 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:01,009 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,009 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,009 INFO     ___FILE_ONLY___ roles/notebooks.serviceAgent
+2024-05-03 12:44:01,009 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,009 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,009 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,009 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:01,009 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,009 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,009 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,009 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,010 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,010 INFO     ___FILE_ONLY___ serviceAccount:service-885587383631@gcp-sa-osconfig.iam.gserviceaccount.com
+2024-05-03 12:44:01,010 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,010 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,010 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:01,010 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,010 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,010 INFO     ___FILE_ONLY___ roles/osconfig.serviceAgent
+2024-05-03 12:44:01,010 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,010 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,010 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,010 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:01,010 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,010 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,010 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,010 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,010 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,010 INFO     ___FILE_ONLY___ serviceAccount:prod-governance-iam-sa-pipelin@gbg-gcp-sh-security-prod-01.iam.gserviceaccount.com
+2024-05-03 12:44:01,010 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,010 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,010 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,011 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,011 INFO     ___FILE_ONLY___ serviceAccount:service-885587383631@container-engine-robot.iam.gserviceaccount.com
+2024-05-03 12:44:01,011 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,011 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,011 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:01,011 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,011 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,011 INFO     ___FILE_ONLY___ roles/owner
+2024-05-03 12:44:01,011 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,011 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,011 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,011 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:01,011 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,011 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,011 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,011 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,011 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,011 INFO     ___FILE_ONLY___ group:gcp-developers@gbgplatforms.com
+2024-05-03 12:44:01,011 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,011 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,011 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:01,011 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,012 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,012 INFO     ___FILE_ONLY___ roles/pubsub.admin
+2024-05-03 12:44:01,012 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,012 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,012 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,012 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:01,012 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,012 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,012 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,012 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,012 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,012 INFO     ___FILE_ONLY___ serviceAccount:accounts-bq-dev-ci@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,012 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,012 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,012 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,012 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,012 INFO     ___FILE_ONLY___ serviceAccount:accounts-bq-qa@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,012 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,012 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,012 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,012 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,013 INFO     ___FILE_ONLY___ serviceAccount:accounts-bq-staging@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,013 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,013 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,013 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,013 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,013 INFO     ___FILE_ONLY___ serviceAccount:dev-us-east4-dfp-dapr-sa@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,013 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,013 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,013 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,013 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,013 INFO     ___FILE_ONLY___ serviceAccount:dev-us-east4-email-dapr-sa@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,013 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,013 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,013 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,013 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,013 INFO     ___FILE_ONLY___ serviceAccount:stg-us-east4-dfp-dapr-sa@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,013 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,013 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,013 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,013 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,014 INFO     ___FILE_ONLY___ serviceAccount:stg-us-east4-email-dapr-sa@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,014 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,014 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,014 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:01,014 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,014 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,014 INFO     ___FILE_ONLY___ roles/pubsub.editor
+2024-05-03 12:44:01,014 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,014 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,014 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,014 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:01,014 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,014 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,014 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,014 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,014 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,014 INFO     ___FILE_ONLY___ serviceAccount:accounts-bq-dev-ci@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,014 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,014 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,014 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,014 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,014 INFO     ___FILE_ONLY___ serviceAccount:accounts-bq-qa@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,015 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,015 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,015 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,015 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,015 INFO     ___FILE_ONLY___ serviceAccount:accounts-bq-staging@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,015 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,015 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,015 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,015 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,015 INFO     ___FILE_ONLY___ serviceAccount:dev-europe-west1-verify-sa@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,015 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,015 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,015 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,015 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,015 INFO     ___FILE_ONLY___ serviceAccount:dev-us-east4-verify-sa@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,015 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,015 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,015 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,015 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,015 INFO     ___FILE_ONLY___ serviceAccount:service-885587383631@gcp-sa-monitoring-notification.iam.gserviceaccount.com
+2024-05-03 12:44:01,015 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,016 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,016 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,016 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,016 INFO     ___FILE_ONLY___ serviceAccount:service-885587383631@gcp-sa-pubsub.iam.gserviceaccount.com
+2024-05-03 12:44:01,016 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,016 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,016 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,016 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,016 INFO     ___FILE_ONLY___ serviceAccount:stg-europe-west1-verify-sa@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,016 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,016 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,016 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,016 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,016 INFO     ___FILE_ONLY___ serviceAccount:stg-us-east4-verify-sa@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,016 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,016 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,016 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:01,016 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,016 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,016 INFO     ___FILE_ONLY___ roles/pubsub.publisher
+2024-05-03 12:44:01,016 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,017 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,017 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,017 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:01,017 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,017 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,017 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,017 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,017 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,017 INFO     ___FILE_ONLY___ serviceAccount:service-885587383631@gcp-sa-pubsub.iam.gserviceaccount.com
+2024-05-03 12:44:01,017 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,017 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,017 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:01,017 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,017 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,017 INFO     ___FILE_ONLY___ roles/pubsub.serviceAgent
+2024-05-03 12:44:01,017 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,017 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,017 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,017 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:01,017 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,017 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,017 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,018 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,018 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,018 INFO     ___FILE_ONLY___ serviceAccount:accounts-bq-dev-ci@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,018 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,018 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,018 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,018 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,018 INFO     ___FILE_ONLY___ serviceAccount:accounts-bq-qa@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,018 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,018 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,018 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,018 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,018 INFO     ___FILE_ONLY___ serviceAccount:accounts-bq-staging@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,018 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,018 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,018 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,018 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,018 INFO     ___FILE_ONLY___ serviceAccount:dev-europe-west1-verify-sa@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,018 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,018 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,018 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,019 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,019 INFO     ___FILE_ONLY___ serviceAccount:dev-us-east4-dfp-dapr-sa@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,019 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,019 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,019 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,019 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,019 INFO     ___FILE_ONLY___ serviceAccount:dev-us-east4-email-dapr-sa@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,019 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,019 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,019 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,019 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,019 INFO     ___FILE_ONLY___ serviceAccount:dev-us-east4-verify-sa@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,019 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,019 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,019 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,019 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,019 INFO     ___FILE_ONLY___ serviceAccount:dev-verify-sa@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,019 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,019 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,019 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,019 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,020 INFO     ___FILE_ONLY___ serviceAccount:service-885587383631@gcp-sa-pubsub.iam.gserviceaccount.com
+2024-05-03 12:44:01,020 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,020 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,020 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,020 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,020 INFO     ___FILE_ONLY___ serviceAccount:stg-europe-west1-verify-sa@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,020 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,020 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,020 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,020 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,020 INFO     ___FILE_ONLY___ serviceAccount:stg-us-east4-dfp-dapr-sa@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,020 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,020 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,020 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,020 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,020 INFO     ___FILE_ONLY___ serviceAccount:stg-us-east4-email-dapr-sa@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,020 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,020 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,020 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,020 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,020 INFO     ___FILE_ONLY___ serviceAccount:stg-us-east4-verify-sa@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,021 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,021 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,021 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:01,021 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,021 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,021 INFO     ___FILE_ONLY___ roles/pubsub.subscriber
+2024-05-03 12:44:01,021 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,021 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,021 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,021 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:01,021 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,021 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,021 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,021 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,021 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,021 INFO     ___FILE_ONLY___ group:gcp-developers@gbgplatforms.com
+2024-05-03 12:44:01,021 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,021 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,021 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:01,022 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,022 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,022 INFO     ___FILE_ONLY___ roles/redis.admin
+2024-05-03 12:44:01,022 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,022 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,022 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,022 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:01,022 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,022 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,022 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,022 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,022 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,022 INFO     ___FILE_ONLY___ serviceAccount:service-885587383631@cloud-redis.iam.gserviceaccount.com
+2024-05-03 12:44:01,022 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,022 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,022 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:01,022 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,022 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,022 INFO     ___FILE_ONLY___ roles/redis.serviceAgent
+2024-05-03 12:44:01,022 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,023 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,023 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,023 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:01,023 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,023 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,023 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,023 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,023 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,023 INFO     ___FILE_ONLY___ serviceAccount:usage-listener-bq-dev-ci@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,023 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,023 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,023 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,023 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,023 INFO     ___FILE_ONLY___ serviceAccount:usage-listener-bq-qa@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,023 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,023 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,023 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,023 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,023 INFO     ___FILE_ONLY___ serviceAccount:usage-listener-bq-staging@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,023 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,023 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,024 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:01,024 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,024 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,024 INFO     ___FILE_ONLY___ roles/resourcemanager.projectIamAdmin
+2024-05-03 12:44:01,024 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,024 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,024 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,024 INFO     ___FILE_ONLY___ condition
+2024-05-03 12:44:01,024 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,024 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,024 INFO     ___FILE_ONLY___     
+2024-05-03 12:44:01,024 INFO     ___FILE_ONLY___ expression
+2024-05-03 12:44:01,024 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,024 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,024 INFO     ___FILE_ONLY___ request.time
+2024-05-03 12:44:01,024 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,024 INFO     ___FILE_ONLY___ <
+2024-05-03 12:44:01,024 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,024 INFO     ___FILE_ONLY___ timestamp("2024-04-23T23:00:00.000Z")
+2024-05-03 12:44:01,024 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,024 INFO     ___FILE_ONLY___     
+2024-05-03 12:44:01,024 INFO     ___FILE_ONLY___ title
+2024-05-03 12:44:01,024 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,025 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,025 INFO     ___FILE_ONLY___ Expiring
+2024-05-03 12:44:01,025 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,025 INFO     ___FILE_ONLY___ Access
+2024-05-03 12:44:01,025 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,025 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,025 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:01,025 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,025 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,025 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,025 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,025 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,025 INFO     ___FILE_ONLY___ user:michael.abbott@gbgplatforms.com
+2024-05-03 12:44:01,025 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,025 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,025 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:01,025 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,025 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,025 INFO     ___FILE_ONLY___ roles/resourcemanager.projectIamAdmin
+2024-05-03 12:44:01,025 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,025 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,026 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,026 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:01,026 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,026 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,026 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,026 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,026 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,026 INFO     ___FILE_ONLY___ group:gcp-developers@gbgplatforms.com
+2024-05-03 12:44:01,026 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,026 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,026 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,026 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,026 INFO     ___FILE_ONLY___ serviceAccount:dev-europe-west1-ado-ngv@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,026 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,026 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,026 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,026 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,026 INFO     ___FILE_ONLY___ serviceAccount:dev-us-east4-ado-ngv@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,026 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,026 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,026 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,026 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,027 INFO     ___FILE_ONLY___ serviceAccount:stg-europe-west1-ado-ngv@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,027 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,027 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,027 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,027 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,027 INFO     ___FILE_ONLY___ serviceAccount:stg-us-east4-ado-ngv@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,027 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,027 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,027 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:01,027 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,027 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,027 INFO     ___FILE_ONLY___ roles/run.admin
+2024-05-03 12:44:01,027 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,027 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,027 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,027 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:01,027 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,028 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,028 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,028 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,028 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,028 INFO     ___FILE_ONLY___ serviceAccount:service-885587383631@serverless-robot-prod.iam.gserviceaccount.com
+2024-05-03 12:44:01,028 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,028 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,028 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:01,028 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,028 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,028 INFO     ___FILE_ONLY___ roles/run.serviceAgent
+2024-05-03 12:44:01,028 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,028 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,028 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,028 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:01,028 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,028 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,028 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,028 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,028 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,028 INFO     ___FILE_ONLY___ group:gcp-developers@gbgplatforms.com
+2024-05-03 12:44:01,028 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,029 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,029 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:01,029 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,029 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,029 INFO     ___FILE_ONLY___ roles/secretmanager.admin
+2024-05-03 12:44:01,029 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,029 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,029 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,029 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:01,029 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,029 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,029 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,029 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,029 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,029 INFO     ___FILE_ONLY___ serviceAccount:service-885587383631@service-networking.iam.gserviceaccount.com
+2024-05-03 12:44:01,029 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,029 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,029 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:01,029 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,029 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,029 INFO     ___FILE_ONLY___ roles/servicenetworking.serviceAgent
+2024-05-03 12:44:01,030 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,030 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,030 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,030 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:01,030 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,030 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,030 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,030 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,030 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,030 INFO     ___FILE_ONLY___ serviceAccount:k8s-16a1fcb037f1a5c0549c39c105@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,030 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,030 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,030 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,030 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,030 INFO     ___FILE_ONLY___ serviceAccount:k8s-3505a7dea458bf110de516a416@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,030 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,030 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,030 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,030 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,030 INFO     ___FILE_ONLY___ serviceAccount:k8s-64e9206e648ba39b182914c3d5@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,031 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,031 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,031 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,031 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,031 INFO     ___FILE_ONLY___ serviceAccount:k8s-690653be98549880a29462b8c4@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,031 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,031 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,031 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,031 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,031 INFO     ___FILE_ONLY___ serviceAccount:k8s-94870d52a610c7b66f1186ccc3@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,031 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,031 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,031 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,031 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,031 INFO     ___FILE_ONLY___ serviceAccount:k8s-97df11432563512ff43234862f@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,031 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,031 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,031 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,032 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,032 INFO     ___FILE_ONLY___ serviceAccount:k8s-b43abf871a0678670837bd4555@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,032 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,032 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,032 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,032 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,032 INFO     ___FILE_ONLY___ serviceAccount:k8s-d4dd27bee86b2c3549fc472726@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,032 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,032 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,032 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:01,032 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,032 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,032 INFO     ___FILE_ONLY___ roles/stackdriver.resourceMetadata.writer
+2024-05-03 12:44:01,032 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,032 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,032 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,032 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:01,032 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,032 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,032 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,032 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,033 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,033 INFO     ___FILE_ONLY___ group:gcp-developers@gbgplatforms.com
+2024-05-03 12:44:01,033 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,033 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,033 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,033 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,033 INFO     ___FILE_ONLY___ serviceAccount:digital-first-sa-pipeline@gbg-gcp-sh-security-prod-01.iam.gserviceaccount.com
+2024-05-03 12:44:01,033 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,033 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,033 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:01,033 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,033 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,033 INFO     ___FILE_ONLY___ roles/storage.admin
+2024-05-03 12:44:01,033 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,033 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,033 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,033 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:01,033 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,033 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,033 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,033 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,034 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,034 INFO     ___FILE_ONLY___ serviceAccount:cdn-assets-sa@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,034 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,034 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,034 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:01,034 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,034 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,034 INFO     ___FILE_ONLY___ roles/storage.objectAdmin
+2024-05-03 12:44:01,034 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,034 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,034 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,034 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:01,034 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,034 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,034 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,034 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,034 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,034 INFO     ___FILE_ONLY___ serviceAccount:k8s-16a1fcb037f1a5c0549c39c105@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,034 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,034 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,034 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,035 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,035 INFO     ___FILE_ONLY___ serviceAccount:k8s-3505a7dea458bf110de516a416@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,035 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,035 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,035 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,035 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,035 INFO     ___FILE_ONLY___ serviceAccount:k8s-64e9206e648ba39b182914c3d5@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,035 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,035 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,035 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,035 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,035 INFO     ___FILE_ONLY___ serviceAccount:k8s-690653be98549880a29462b8c4@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,035 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,035 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,035 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,035 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,035 INFO     ___FILE_ONLY___ serviceAccount:k8s-94870d52a610c7b66f1186ccc3@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,035 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,035 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,035 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,036 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,036 INFO     ___FILE_ONLY___ serviceAccount:k8s-97df11432563512ff43234862f@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,036 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,036 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,036 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,036 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,036 INFO     ___FILE_ONLY___ serviceAccount:k8s-b43abf871a0678670837bd4555@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,036 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,036 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,036 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,036 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,036 INFO     ___FILE_ONLY___ serviceAccount:k8s-d4dd27bee86b2c3549fc472726@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,036 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,036 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,036 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:01,036 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,036 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,036 INFO     ___FILE_ONLY___ roles/storage.objectViewer
+2024-05-03 12:44:01,036 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,037 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,037 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,037 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:01,037 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,037 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,037 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,037 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,037 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,037 INFO     ___FILE_ONLY___ serviceAccount:dev-euw1-bastion-sa@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,037 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,037 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,037 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,037 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,037 INFO     ___FILE_ONLY___ serviceAccount:dev-use4-bastion-sa@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,037 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,037 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,037 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,037 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,037 INFO     ___FILE_ONLY___ serviceAccount:dev-use4-rt-sql-sa@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,037 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,037 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,038 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,038 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,038 INFO     ___FILE_ONLY___ serviceAccount:stg-euw1-bastion-sa@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,038 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,038 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,038 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,038 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,038 INFO     ___FILE_ONLY___ serviceAccount:stg-use4-bastion-sa@gbg-gcp-wl-lo-reach-nprod.iam.gserviceaccount.com
+2024-05-03 12:44:01,038 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,038 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,038 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:01,038 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,038 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,038 INFO     ___FILE_ONLY___ roles/viewer
+2024-05-03 12:44:01,038 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,038 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,038 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,038 INFO     ___FILE_ONLY___ members
+2024-05-03 12:44:01,038 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,038 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,038 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,038 INFO     ___FILE_ONLY___ -
+2024-05-03 12:44:01,039 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,039 INFO     ___FILE_ONLY___ serviceAccount:service-885587383631@gcp-sa-vpcaccess.iam.gserviceaccount.com
+2024-05-03 12:44:01,039 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,039 INFO     ___FILE_ONLY___   
+2024-05-03 12:44:01,039 INFO     ___FILE_ONLY___ role
+2024-05-03 12:44:01,039 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,039 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,039 INFO     ___FILE_ONLY___ roles/vpcaccess.serviceAgent
+2024-05-03 12:44:01,039 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,039 INFO     ___FILE_ONLY___ etag
+2024-05-03 12:44:01,039 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,039 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,039 INFO     ___FILE_ONLY___ BwYXiwUvSEM=
+2024-05-03 12:44:01,039 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,039 INFO     ___FILE_ONLY___ version
+2024-05-03 12:44:01,039 INFO     ___FILE_ONLY___ :
+2024-05-03 12:44:01,039 INFO     ___FILE_ONLY___  
+2024-05-03 12:44:01,039 INFO     ___FILE_ONLY___ 3
+2024-05-03 12:44:01,039 INFO     ___FILE_ONLY___ 
+
+2024-05-03 12:44:01,040 DEBUG    root            Checking for updates...
+2024-05-03 12:44:01,043 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2024-05-03 12:44:01,167 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components-2.json HTTP/1.1" 200 222654
+2024-05-03 12:44:01,236 DEBUG    root            Updating notification cache...
+2024-05-03 12:44:01,236 DEBUG    root            Activating notification: [default]
+2024-05-03 12:44:01,236 INFO     ___FILE_ONLY___ 
+
+Updates are available for some Google Cloud CLI components.  To install them,
+please run:
+  $ gcloud components update
+
+

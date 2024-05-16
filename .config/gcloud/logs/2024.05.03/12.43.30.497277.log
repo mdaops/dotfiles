@@ -1,0 +1,17 @@
+2024-05-03 12:43:30,499 DEBUG    root            Loaded Command Group: ['gcloud', 'projects']
+2024-05-03 12:43:30,500 ERROR    root            (gcloud.projects) Command name argument expected.
+2024-05-03 12:43:30,505 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'delete']
+2024-05-03 12:43:30,507 DEBUG    root            No implementation for release track [GA] for element: [/home/dev/google-cloud-sdk/lib/surface/projects/move]
+2024-05-03 12:43:30,508 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'list']
+2024-05-03 12:43:30,509 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'undelete']
+2024-05-03 12:43:30,510 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'describe']
+2024-05-03 12:43:30,515 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'set_iam_policy']
+2024-05-03 12:43:30,517 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'create']
+2024-05-03 12:43:30,527 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'add_iam_policy_binding']
+2024-05-03 12:43:30,533 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'get_ancestors']
+2024-05-03 12:43:30,537 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'get_iam_policy']
+2024-05-03 12:43:30,543 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'remove_iam_policy_binding']
+2024-05-03 12:43:30,545 DEBUG    root            No implementation for release track [GA] for element: [/home/dev/google-cloud-sdk/lib/surface/projects/search]
+2024-05-03 12:43:30,545 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'get_ancestors_iam_policy']
+2024-05-03 12:43:30,547 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'update']
+2024-05-03 12:43:30,547 DEBUG    root            Chosen display Format:table[no-heading,margin=6,width=80]([0]:label='':align=left:width=22,[1]:label='':align=left:wrap)

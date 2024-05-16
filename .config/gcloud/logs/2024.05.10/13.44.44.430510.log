@@ -1,0 +1,65 @@
+2024-05-10 13:44:44,432 DEBUG    root            Loaded Command Group: ['gcloud', 'storage']
+2024-05-10 13:44:44,432 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'buckets']
+2024-05-10 13:44:44,433 DEBUG    root            Running [gcloud.storage.buckets] with arguments: [--help: "None"]
+2024-05-10 13:44:45,040 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'buckets', 'get_iam_policy']
+2024-05-10 13:44:45,041 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'buckets', 'set_iam_policy']
+2024-05-10 13:44:45,041 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'buckets', 'add_iam_policy_binding']
+2024-05-10 13:44:45,043 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'buckets', 'update']
+2024-05-10 13:44:45,045 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'buckets', 'list']
+2024-05-10 13:44:45,046 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'buckets', 'delete']
+2024-05-10 13:44:45,047 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'buckets', 'create']
+2024-05-10 13:44:45,047 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'buckets', 'describe']
+2024-05-10 13:44:45,048 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'buckets', 'remove_iam_policy_binding']
+2024-05-10 13:44:45,049 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'buckets', 'notifications']
+2024-05-10 13:44:45,049 DEBUG    root            No implementation for release track [GA] for element: [/home/dev/google-cloud-sdk/lib/surface/storage/buckets/config]
+2024-05-10 13:44:45,051 DEBUG    root            Loaded Command Group: ['gcloud', 'help']
+2024-05-10 13:44:45,053 INFO     ___FILE_ONLY___ [m[1mNAME[m
+    gcloud storage buckets - manage Cloud Storage buckets
+
+[m[1mSYNOPSIS[m
+    [1mgcloud storage buckets[m [4mGROUP[m | [4mCOMMAND[m [[4mGCLOUD_WIDE_FLAG ...[m]
+
+[m[1mDESCRIPTION[m
+    Manage Cloud Storage buckets.
+
+[m[1mGCLOUD WIDE FLAGS[m
+    These flags are available to all commands: --help.
+
+    Run [1m$ gcloud help[m for details.
+
+[m[1mGROUPS[m
+    [1m[1;4mGROUP[1m[m is one of the following:
+
+     [1mnotifications[m
+        Manage Cloud Storage bucket notifications.
+
+[m[1mCOMMANDS[m
+    [1m[1;4mCOMMAND[1m[m is one of the following:
+
+     [1madd-iam-policy-binding[m
+        Add an IAM policy binding to a bucket.
+
+     [1mcreate[m
+        Create buckets for storing objects.
+
+     [1mdelete[m
+        Deletes Cloud Storage buckets.
+
+     [1mdescribe[m
+        Describes Cloud Storage buckets.
+
+     [1mget-iam-policy[m
+        Get the IAM policy for a bucket.
+
+     [1mlist[m
+        Lists Cloud Storage buckets.
+
+     [1mremove-iam-policy-binding[m
+        Remove an IAM policy binding from a bucket.
+
+     [1mset-iam-policy[m
+        Set the IAM policy for a bucket.
+
+     [1mupdate[m
+        Update bucket settings.
+[m

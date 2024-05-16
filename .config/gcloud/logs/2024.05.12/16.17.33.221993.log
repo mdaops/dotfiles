@@ -1,0 +1,176 @@
+2024-05-12 16:17:33,223 DEBUG    root            Loaded Command Group: ['gcloud', 'components']
+2024-05-12 16:17:33,226 DEBUG    root            Loaded Command Group: ['gcloud', 'components', 'install']
+2024-05-12 16:17:33,227 DEBUG    root            Running [gcloud.components.install] with arguments: [COMPONENT-IDS:1: "['gke-gcloud-auth-plugin']"]
+2024-05-12 16:17:33,231 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2024-05-12 16:17:33,374 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components-v446.0.1.json HTTP/1.1" 200 209937
+2024-05-12 16:17:33,443 INFO     ___FILE_ONLY___ 
+
+2024-05-12 16:17:33,444 INFO     ___FILE_ONLY___ 
+Your current Google Cloud CLI version is: 446.0.1
+
+2024-05-12 16:17:33,444 INFO     ___FILE_ONLY___ Installing components from version: 446.0.1
+
+2024-05-12 16:17:33,444 INFO     ___FILE_ONLY___ 
+
+2024-05-12 16:17:33,444 DEBUG    root            Chosen display Format:table[box,title="These components will be removed."](details.display_name:label=Name:align=left,version.version_string:label=Version:align=right,data.size.size(zero="",min=1048576):label=Size:align=right)
+2024-05-12 16:17:33,444 DEBUG    root            Chosen display Format:table[box,title="These components will be updated."](details.display_name:label=Name:align=left,version.version_string:label=Version:align=right,data.size.size(zero="",min=1048576):label=Size:align=right)
+2024-05-12 16:17:33,445 DEBUG    root            Chosen display Format:table[box,title="These components will be installed."](details.display_name:label=Name:align=left,version.version_string:label=Version:align=right,data.size.size(zero="",min=1048576):label=Size:align=right)
+2024-05-12 16:17:33,445 INFO     ___FILE_ONLY___ ┌────────────────────────────────────────────┐
+2024-05-12 16:17:33,445 INFO     ___FILE_ONLY___ 
+
+2024-05-12 16:17:33,445 INFO     ___FILE_ONLY___ │    These components will be installed.     │
+2024-05-12 16:17:33,445 INFO     ___FILE_ONLY___ 
+
+2024-05-12 16:17:33,445 INFO     ___FILE_ONLY___ ├────────────────────────┬─────────┬─────────┤
+2024-05-12 16:17:33,445 INFO     ___FILE_ONLY___ 
+
+2024-05-12 16:17:33,446 INFO     ___FILE_ONLY___ │          Name          │ Version │   Size  │
+2024-05-12 16:17:33,446 INFO     ___FILE_ONLY___ 
+
+2024-05-12 16:17:33,446 INFO     ___FILE_ONLY___ ├────────────────────────┼─────────┼─────────┤
+2024-05-12 16:17:33,446 INFO     ___FILE_ONLY___ 
+
+2024-05-12 16:17:33,446 INFO     ___FILE_ONLY___ │ 
+2024-05-12 16:17:33,446 INFO     ___FILE_ONLY___ gke-gcloud-auth-plugin
+2024-05-12 16:17:33,446 INFO     ___FILE_ONLY___  
+2024-05-12 16:17:33,446 INFO     ___FILE_ONLY___ │ 
+2024-05-12 16:17:33,446 INFO     ___FILE_ONLY___   0.5.5
+2024-05-12 16:17:33,446 INFO     ___FILE_ONLY___  
+2024-05-12 16:17:33,446 INFO     ___FILE_ONLY___ │ 
+2024-05-12 16:17:33,446 INFO     ___FILE_ONLY___ 7.9 MiB
+2024-05-12 16:17:33,446 INFO     ___FILE_ONLY___  
+2024-05-12 16:17:33,446 INFO     ___FILE_ONLY___ │
+2024-05-12 16:17:33,446 INFO     ___FILE_ONLY___ 
+
+2024-05-12 16:17:33,446 INFO     ___FILE_ONLY___ └────────────────────────┴─────────┴─────────┘
+2024-05-12 16:17:33,446 INFO     ___FILE_ONLY___ 
+
+2024-05-12 16:17:33,446 INFO     ___FILE_ONLY___ 
+
+2024-05-12 16:17:33,448 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2024-05-12 16:17:33,538 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/RELEASE_NOTES HTTP/1.1" 200 1203742
+2024-05-12 16:17:33,655 INFO     ___FILE_ONLY___ For the latest full release notes, please visit:
+  https://cloud.google.com/sdk/release_notes
+
+
+2024-05-12 16:17:34,886 INFO     ___FILE_ONLY___ ╔════════════════════════════════════════════════════════════╗
+
+2024-05-12 16:17:34,887 INFO     ___FILE_ONLY___ ╠═ Creating update staging area                             ═╣
+
+2024-05-12 16:17:34,887 INFO     ___FILE_ONLY___ ╚
+2024-05-12 16:17:34,887 INFO     ___FILE_ONLY___ ══════
+2024-05-12 16:17:34,887 INFO     ___FILE_ONLY___ ══════
+2024-05-12 16:17:34,887 INFO     ___FILE_ONLY___ ══════
+2024-05-12 16:17:35,164 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:35,275 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:35,387 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:35,528 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:35,668 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:35,784 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:35,912 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:36,042 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:36,161 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:36,275 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:36,396 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:36,495 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:36,611 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:36,729 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:37,021 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:37,198 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:37,302 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:37,371 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:37,446 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:37,512 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:37,586 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:37,648 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:37,917 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:38,035 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:38,147 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:38,246 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:38,341 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:38,436 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:38,537 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:38,623 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:38,706 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:38,821 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:38,957 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:39,040 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:39,161 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:39,282 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:39,468 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:39,828 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:40,000 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:40,102 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:40,279 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:40,399 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:40,399 INFO     ___FILE_ONLY___ ╝
+2024-05-12 16:17:41,506 INFO     ___FILE_ONLY___ ╠════════════════════════════════════════════════════════════╣
+
+2024-05-12 16:17:41,506 INFO     ___FILE_ONLY___ ╠═ Installing: gke-gcloud-auth-plugin                       ═╣
+
+2024-05-12 16:17:41,506 INFO     ___FILE_ONLY___ ╚
+2024-05-12 16:17:41,509 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): dl.google.com:443
+2024-05-12 16:17:41,774 DEBUG    urllib3.connectionpool https://dl.google.com:443 "GET /dl/cloudsdk/channels/rapid/components/google-cloud-sdk-gke-gcloud-auth-plugin-linux-x86_64-20230811080439.tar.gz HTTP/1.1" 200 8262835
+2024-05-12 16:17:42,042 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:42,042 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:42,043 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:42,043 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:42,043 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:42,043 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:42,043 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:42,043 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:42,044 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:42,044 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:42,044 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:42,044 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:42,044 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:42,044 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:42,045 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:42,045 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:42,045 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:42,045 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:42,045 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:42,045 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:42,046 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:42,046 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:42,046 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:42,046 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:42,046 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:42,046 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:42,047 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:42,047 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:42,047 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:42,048 INFO     ___FILE_ONLY___ ═
+2024-05-12 16:17:42,216 INFO     ___FILE_ONLY___ ══════════════════════════════
+2024-05-12 16:17:42,216 INFO     ___FILE_ONLY___ ╝
+2024-05-12 16:17:42,219 INFO     ___FILE_ONLY___ ╠════════════════════════════════════════════════════════════╣
+
+2024-05-12 16:17:42,219 INFO     ___FILE_ONLY___ ╠═ Installing: gke-gcloud-auth-plugin                       ═╣
+
+2024-05-12 16:17:42,219 INFO     ___FILE_ONLY___ ╚
+2024-05-12 16:17:42,221 INFO     ___FILE_ONLY___ ════════════════════════════════════════════════════════════
+2024-05-12 16:17:42,221 INFO     ___FILE_ONLY___ ╝
+2024-05-12 16:17:42,221 INFO     ___FILE_ONLY___ ╠════════════════════════════════════════════════════════════╣
+
+2024-05-12 16:17:42,221 INFO     ___FILE_ONLY___ ╠═ Creating backup and activating new installation          ═╣
+
+2024-05-12 16:17:42,221 INFO     ___FILE_ONLY___ ╚
+2024-05-12 16:17:42,221 DEBUG    root            Attempting to move directory [/home/dev/google-cloud-sdk] to [/home/dev/google-cloud-sdk.staging/.install/.backup]
+2024-05-12 16:17:42,221 INFO     ___FILE_ONLY___ ══════════════════════════════
+2024-05-12 16:17:42,221 DEBUG    root            Attempting to move directory [/home/dev/google-cloud-sdk.staging] to [/home/dev/google-cloud-sdk]
+2024-05-12 16:17:42,221 INFO     ___FILE_ONLY___ ══════════════════════════════
+2024-05-12 16:17:42,221 INFO     ___FILE_ONLY___ ╝
+
+2024-05-12 16:17:42,223 DEBUG    root            Updating notification cache...
+2024-05-12 16:17:42,223 INFO     ___FILE_ONLY___ 
+
+2024-05-12 16:17:42,223 INFO     ___FILE_ONLY___ Performing post processing steps...
+2024-05-12 16:17:42,224 DEBUG    root            Executing command: ['/home/dev/google-cloud-sdk/platform/bundledpythonunix/bin/python3', '/home/dev/google-cloud-sdk/lib/gcloud.py', 'components', 'post-process']
+2024-05-12 16:17:54,839 DEBUG    ___FILE_ONLY___ 
+2024-05-12 16:17:54,839 DEBUG    ___FILE_ONLY___ 
+2024-05-12 16:17:54,995 INFO     ___FILE_ONLY___ 
+Update done!
+
+
+2024-05-12 16:17:55,303 DEBUG    root            Chosen display Format:none
+2024-05-12 16:17:55,303 INFO     root            Display format: "none"

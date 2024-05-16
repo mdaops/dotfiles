@@ -1,0 +1,26 @@
+2024-05-15 17:47:44,763 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2024-05-15 17:47:44,765 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'config_helper']
+2024-05-15 17:47:44,766 DEBUG    root            Running [gcloud.config.config-helper] with arguments: [--format: "json"]
+2024-05-15 17:47:44,770 DEBUG    root            Chosen display Format:default json
+2024-05-15 17:47:44,770 INFO     root            Display format: "default json"
+2024-05-15 17:47:44,771 INFO     ___FILE_ONLY___ {
+  "configuration": {
+    "active_configuration": "default",
+    "properties": {
+      "core": {
+        "account": "admin@swlabs.fyi",
+        "disable_usage_reporting": "True"
+      }
+    }
+  },
+  "credential": {
+    "access_token": "ya29.a0AXooCgt8IHrfRIHKPu81AWK3qWzCRm0Nn-vJlgNyGOum3npUDXe--cj4DTq4DzC9imRmPuET5SD-Ixf6Xzv_NGpvsUVFnceKy7_B1aoxgsXc-7_pKyfXQn8HFr-vMY4EdDYBhMSh3zrhCE0XPNVxIf81m_0mOPQBW8R8fvCkegaCgYKAcYSARMSFQHGX2Mir5Usin9B3yaznifPFkxhZg0177",
+    "id_token": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImEzYjc2MmY4NzFjZGIzYmFlMDA0NGM2NDk2MjJmYzEzOTZlZGEzZTMiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzMjU1NTk0MDU1OS5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImF1ZCI6IjMyNTU1OTQwNTU5LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTAzODA4NTk1OTU0NTMwMTAwNTg5IiwiaGQiOiJzd2xhYnMuZnlpIiwiZW1haWwiOiJhZG1pbkBzd2xhYnMuZnlpIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJQZ0I4dVpTTEdmLWtLQ280aHdfV3Z3IiwiaWF0IjoxNzE1NzkxNDc2LCJleHAiOjE3MTU3OTUwNzZ9.hqIlT5D1faE_8Tl5Y2fPl8xw96amUpTArD9z76fbu59YWupH9C-di54NqFJNRwxyTBIyLytaFbH6SiFKxmxkDMlDNGuEv6ObW40WmqaNM8Ety795b9Ij8uLs1s06uAMBsaCecS5iL6sOFVbu-YSEAF8u4r1jxvV1nFdD_bJ1YaJ3VzNVViNzt-OC2bpORzd7_RJrWy7VY-WSMnWqKgmpn3G9Xph1tndeJE4RbKgwL08UJn_gZKTTQKKCT2PaNruhgafCAMFbDSzw6L_gPlBroEsW6q2vfmEcLdg4y0bE1H-vfaLrNw28ZCt7xzqaoUUOKIHTpNfZPN_W_rgahDfy1w",
+    "token_expiry": "2024-05-15T17:44:36Z"
+  },
+  "sentinels": {
+    "config_sentinel": "/home/dev/.config/gcloud/config_sentinel"
+  }
+}
+2024-05-15 17:47:44,771 INFO     ___FILE_ONLY___ 
+
