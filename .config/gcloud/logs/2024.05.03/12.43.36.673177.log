@@ -1,3 +1,0 @@
-2024-05-03 12:43:36,673 DEBUG    root            Loaded Command Group: ['gcloud', 'projects']
-2024-05-03 12:43:36,678 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'get_iam_policy']
-2024-05-03 12:43:36,679 ERROR    root            (gcloud.projects.get-iam-policy) argument PROJECT_ID_OR_NUMBER: Must be specified.
