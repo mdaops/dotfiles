@@ -13,3 +13,6 @@ require('lazy').setup {
   { import = 'custom.plugins' },
   { import = 'custom.plugins.lang.elixir' },
 }
+
+local workspace = require 'workspace'
+vim.keymap.set('n', '<leader>ds', workspace.tmux_sessions, { desc = 'Show [S]essions' })

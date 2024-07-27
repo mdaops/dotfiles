@@ -23,8 +23,8 @@ return {
         dim_inactive = false, -- dims inactive windows
         lualine_bold = true, -- When `true`, section headers in the lualine theme will be bold
       }
-      vim.cmd.hi 'Comment gui=none'
-      vim.cmd.colorscheme 'tokyonight-night'
+      -- vim.cmd.hi 'Comment gui=none'
+      -- vim.cmd.colorscheme 'tokyonight-night'
     end,
   },
   {
@@ -36,23 +36,37 @@ return {
         integrations = {
           cmp = true,
           gitsigns = true,
-          nvimtree = true,
-          treesitter = true,
+          harpoon = true,
+          illuminate = true,
+          indent_blankline = {
+            enabled = false,
+            scope_color = 'sapphire',
+            colored_indent_levels = false,
+          },
+          mason = true,
+          native_lsp = { enabled = true },
           notify = true,
+          nvimtree = true,
+          neotree = true,
+          symbols_outline = true,
+          telescope = true,
+          treesitter = true,
+          treesitter_context = true,
           mini = {
             enabled = true,
             indentscope_color = '',
           },
         },
       }
-      -- vim.cmd.colorscheme 'catppuccin'
+      vim.cmd.colorscheme 'catppuccin-macchiato'
+      vim.cmd.hi 'Comment gui=none'
     end,
   },
   {
     'EdenEast/nightfox.nvim',
     config = function()
       vim.cmd.hi 'Comment gui=none'
-      -- vim.cmd.colorscheme 'carbonfox'
+      -- vim.cmd.colorscheme 'duskfox'
     end,
   },
   {

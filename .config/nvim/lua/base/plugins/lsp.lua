@@ -68,7 +68,6 @@ return { -- LSP Configuration & Plugins
             buffer = event.buf,
             callback = vim.lsp.buf.document_highlight,
           })
-
           vim.api.nvim_create_autocmd({ 'CursorMoved', 'CursorMovedI' }, {
             buffer = event.buf,
             callback = vim.lsp.buf.clear_references,
@@ -131,6 +130,15 @@ return { -- LSP Configuration & Plugins
       terraformls = {
         settings = {},
       },
+      elixirls = {
+        cmd = { '/Users/michael.abbott/.local/share/nvim/mason/packages/elixir-ls/language_server.sh' },
+        settings = {
+          dialyzerEnabled = true,
+          fetchDeps = false,
+          enableTestLenses = false,
+          suggestSpecs = false,
+        },
+      },
       lua_ls = {
         settings = {
           Lua = {
@@ -140,20 +148,14 @@ return { -- LSP Configuration & Plugins
             runtime = { version = 'LuaJIT' },
             workspace = {
               checkThirdParty = false,
-              -- Tells lua_ls where to find all the Lua files that you have loaded
-              -- for your neovim configuration.
               library = {
                 '${3rd}/luv/library',
                 unpack(vim.api.nvim_get_runtime_file('', true)),
               },
-              -- If lua_ls is really slow on your computer, you can try this instead:
-              -- library = { vim.env.VIMRUNTIME },
             },
             completion = {
               callSnippet = 'Replace',
             },
-            -- You can toggle below to ignore Lua_LS's noisy `missing-fields` warnings
-            -- diagnostics = { disable = { 'missing-fields' } },
           },
         },
       },
@@ -178,18 +180,6 @@ return { -- LSP Configuration & Plugins
           server.capabilities = vim.tbl_deep_extend('force', {}, capabilities, server.capabilities or {})
           require('lspconfig')[server_name].setup(server)
         end,
-        -- ['elixir-ls'] = function()
-        --   local elixir = require 'elixir'
-        --   require('lspconfig').elixirls.setup {
-        --     cmd = { '/home/dev/.config/.elixir-ls/release/language_server.sh' },
-        --     settings = elixir.settings {
-        --       dialyzerEnabled = true,
-        --       fetchDeps = false,
-        --       enableTestLenses = false,
-        --       suggestSpecs = false,
-        --     },
-        --   }
-        -- end,
       },
     }
   end,
