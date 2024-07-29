@@ -89,6 +89,14 @@ return { -- LSP Configuration & Plugins
           inlay_hints_show_parameter_name = true,
         },
       },
+      sqls = {
+        filetypes = { 'sql', 'mysql', 'sqlx' },
+        sqls = {
+          format = {
+            enable = false,
+          },
+        },
+      },
       gopls = {
         settings = {
           gofumpt = true,

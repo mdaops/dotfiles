@@ -14,5 +14,11 @@ require('lazy').setup {
   { import = 'custom.plugins.lang.elixir' },
 }
 
+vim.filetype.add {
+  extension = {
+    sqlx = 'sql',
+  },
+}
+
 local workspace = require 'workspace'
 vim.keymap.set('n', '<leader>ds', workspace.tmux_sessions, { desc = 'Show [S]essions' })

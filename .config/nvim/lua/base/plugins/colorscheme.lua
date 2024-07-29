@@ -27,41 +27,41 @@ return {
       -- vim.cmd.colorscheme 'tokyonight-night'
     end,
   },
-  {
-    'catppuccin/nvim',
-    name = 'catppuccin',
-    priority = 1000,
-    config = function()
-      require('catppuccin').setup {
-        integrations = {
-          cmp = true,
-          gitsigns = true,
-          harpoon = true,
-          illuminate = true,
-          indent_blankline = {
-            enabled = false,
-            scope_color = 'sapphire',
-            colored_indent_levels = false,
-          },
-          mason = true,
-          native_lsp = { enabled = true },
-          notify = true,
-          nvimtree = true,
-          neotree = true,
-          symbols_outline = true,
-          telescope = true,
-          treesitter = true,
-          treesitter_context = true,
-          mini = {
-            enabled = true,
-            indentscope_color = '',
-          },
-        },
-      }
-      vim.cmd.colorscheme 'catppuccin-macchiato'
-      vim.cmd.hi 'Comment gui=none'
-    end,
-  },
+  -- {
+  --   'catppuccin/nvim',
+  --   name = 'catppuccin',
+  --   priority = 1000,
+  --   config = function()
+  --     require('catppuccin').setup {
+  --       integrations = {
+  --         cmp = true,
+  --         gitsigns = true,
+  --         harpoon = true,
+  --         illuminate = true,
+  --         indent_blankline = {
+  --           enabled = false,
+  --           scope_color = 'sapphire',
+  --           colored_indent_levels = false,
+  --         },
+  --         mason = true,
+  --         native_lsp = { enabled = true },
+  --         notify = true,
+  --         nvimtree = true,
+  --         neotree = true,
+  --         symbols_outline = true,
+  --         telescope = true,
+  --         treesitter = true,
+  --         treesitter_context = true,
+  --         mini = {
+  --           enabled = true,
+  --           indentscope_color = '',
+  --         },
+  --       },
+  --     }
+  --     vim.cmd.colorscheme 'catppuccin-macchiato'
+  --     vim.cmd.hi 'Comment gui=none'
+  --   end,
+  -- },
   {
     'EdenEast/nightfox.nvim',
     config = function()
@@ -100,8 +100,8 @@ return {
           GitSignsDelete = { fg = '#dbb6b4', inherit = false },
         },
       }
-      -- vim.cmd.hi 'Comment gui=none'
-      -- vim.cmd.colorscheme 'rose-pine'
+      vim.cmd.hi 'Comment gui=none'
+      vim.cmd.colorscheme 'rose-pine'
     end,
   },
 }
