@@ -21,4 +21,7 @@ vim.filetype.add {
 }
 
 local workspace = require 'workspace'
+
 vim.keymap.set('n', '<leader>ds', workspace.tmux_sessions, { desc = 'Show [S]essions' })
+vim.cmd.colorscheme 'cyberdream'
+vim.cmd.hi 'Comment gui=none'

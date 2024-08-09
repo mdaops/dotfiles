@@ -36,15 +36,25 @@ return {
         transparent = true,
         italic_comments = true,
         hide_fillchars = false,
-        borderless_telescope = true,
         terminal_colors = true,
+        borderless_telescope = { border = true, style = 'flat' },
         theme = {
-          variant = 'default',
-        },
-        extensions = {
-          telescope = true,
-          notify = true,
-          mini = true,
+          variant = 'auto',
+          overrides = function(colours)
+            return {
+              TelescopePromptPrefix = { fg = colours.blue },
+              TelescopeMatching = { fg = colours.cyan },
+              TelescopeResultsTitle = { fg = colours.blue },
+              TelescopePromptCounter = { fg = colours.cyan },
+              -- TelescopePromptTitle = { fg = colours.bg, bg = colours.blue, bold = true },
+              TelescopeNormal = { bg = 'none' },
+              TelescopeResultsNormal = { fg = colours.bg, bg = 'none' },
+              TelescopeSelection = { fg = colours.cyan, bg = 'none' },
+              -- TelescopeSelectionCaret = { fg = 'rose', bg = 'rose' },
+              -- TelescopePromptNormal = { bg = 'base' },
+              -- TelescopeResultsNormal = { fg = 'subtle', bg = 'none' },
+            }
+          end,
         },
       }
       vim.cmd.colorscheme 'cyberdream'
@@ -108,9 +118,6 @@ return {
   --         TelescopeBorder = { fg = 'highlight_high', bg = 'none' },
   --         TelescopeNormal = { bg = 'none' },
   --         TelescopePromptNormal = { bg = 'base' },
-  --         TelescopeResultsNormal = { fg = 'subtle', bg = 'none' },
-  --         TelescopeSelection = { fg = 'text', bg = 'base' },
-  --         TelescopeSelectionCaret = { fg = 'rose', bg = 'rose' },
   --         GitSignsAdd = { fg = '#bacfc4', inherit = false },
   --         GitSignsChange = { fg = '#e6d2c1', inherit = false },
   --         GitSignsDelete = { fg = '#dbb6b4', inherit = false },
