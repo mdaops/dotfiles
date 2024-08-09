@@ -31,7 +31,6 @@ return {
       },
     }
 
-    -- Enable telescope extensions, if they are installed
     pcall(require('telescope').load_extension, 'fzf')
     pcall(require('telescope').load_extension, 'ui-select')
     pcall(require('telescope').load_extension, 'file_browser')
@@ -52,9 +51,7 @@ return {
     vim.keymap.set('n', '<leader>sb', ':Telescope file_browser<CR>', { desc = '[S]earch File [B]rowser' })
     vim.keymap.set('n', '<leader>std', ':Telescope terraform_doc<CR>', { desc = '[S]earch [T]erraform [D]ocs' })
 
-    -- Slightly advanced example of overriding default behavior and theme
     vim.keymap.set('n', '<leader>/', function()
-      -- You can pass additional configuration to telescope to change theme, layout, etc.
       builtin.current_buffer_fuzzy_find(require('telescope.themes').get_dropdown {
         winblend = 10,
         previewer = false,

@@ -27,6 +27,29 @@ return {
       -- vim.cmd.colorscheme 'tokyonight-night'
     end,
   },
+  {
+    'scottmckendry/cyberdream.nvim',
+    lazy = false,
+    priority = 1000,
+    config = function()
+      require('cyberdream').setup {
+        transparent = true,
+        italic_comments = true,
+        hide_fillchars = false,
+        borderless_telescope = true,
+        terminal_colors = true,
+        theme = {
+          variant = 'default',
+        },
+        extensions = {
+          telescope = true,
+          notify = true,
+          mini = true,
+        },
+      }
+      vim.cmd.colorscheme 'cyberdream'
+    end,
+  },
   -- {
   --   'catppuccin/nvim',
   --   name = 'catppuccin',
@@ -63,13 +86,6 @@ return {
   --   end,
   -- },
   {
-    'EdenEast/nightfox.nvim',
-    config = function()
-      vim.cmd.hi 'Comment gui=none'
-      -- vim.cmd.colorscheme 'duskfox'
-    end,
-  },
-  {
     'rose-pine/neovim',
     name = 'rose-pine',
     lazy = false,
@@ -100,8 +116,8 @@ return {
           GitSignsDelete = { fg = '#dbb6b4', inherit = false },
         },
       }
-      vim.cmd.hi 'Comment gui=none'
-      vim.cmd.colorscheme 'rose-pine'
+      -- vim.cmd.hi 'Comment gui=none'
+      -- vim.cmd.colorscheme 'rose-pine'
     end,
   },
 }

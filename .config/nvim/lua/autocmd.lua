@@ -35,3 +35,10 @@ vim.api.nvim_create_autocmd('TextYankPost', {
     vim.highlight.on_yank()
   end,
 })
+
+vim.api.nvim_create_autocmd('FileType', {
+  pattern = { 'sql', 'mysql', 'sqlx' },
+  callback = function()
+    vim.g.autoformat = false
+  end,
+})
