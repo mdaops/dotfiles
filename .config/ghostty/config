@@ -1,0 +1,5 @@
+theme = catppuccin-mocha
+font-family = Hack Nerd Font Mono
+font-size = 22
+background-opacity = 0.95
+gtk-titlebar = false
