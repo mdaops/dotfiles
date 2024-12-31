@@ -189,6 +189,24 @@ return { -- LSP Configuration & Plugins
           server.capabilities = vim.tbl_deep_extend('force', {}, capabilities, server.capabilities or {})
           require('lspconfig')[server_name].setup(server)
         end,
+        ['gopls'] = function()
+          local server = servers['gopls'] or {}
+          server.capabilities = vim.tbl_deep_extend('force', {}, capabilities, server.capabilities or {})
+          require('lspconfig')['gopls'].setup(server)
+          vim.lsp.on_attach(function(client, _)
+            if not client.server_capabilities.semanticTokensProvider then
+              local semantic = client.config.capabilities.textDocument.semanticTokens
+              client.server_capabilities.semanticTokensProvider = {
+                full = true,
+                legend = {
+                  tokenTypes = semantic.tokenTypes,
+                  tokenModifiers = semantic.tokenModifiers,
+                },
+                range = true,
+              }
+            end
+          end)
+        end,
       },
     }
   end,

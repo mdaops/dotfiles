@@ -13,6 +13,9 @@ export PNPM_HOME="/home/dev/.local/share/pnpm"
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
+export ZSCALER_CERT=$HOME/zscaler_root_ca.crt
+export ZSCALER_CERT_CONTENT="$(cat $ZSCALER_CERT)" 
+
 # export CURL_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
 
 ZSH_THEME=""

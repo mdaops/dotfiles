@@ -7,11 +7,13 @@ return {
     'nvim-treesitter/nvim-treesitter',
     'jfpedroza/neotest-elixir',
     'nvim-neotest/neotest-plenary',
+    { 'fredrikaverpil/neotest-golang', version = '*' }, -- Installation
   },
   opts = {
     adapters = {
       ['neotest-plenary'] = {},
       ['neotest-elixir'] = {},
+      ['neotest-golang'] = {},
     },
   },
   status = { virtual_text = true },
