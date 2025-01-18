@@ -84,20 +84,6 @@ return { -- LSP Configuration & Plugins
           inlay_hints_show_parameter_name = true,
         },
       },
-      -- sqls = {
-      --   filetypes = { 'sql', 'sqlx' },
-      --   sqls = {
-      --     connections = {},
-      --     lowercaseKeywords = false,
-      --     format = {
-      --       enable = false,
-      --     },
-      --   },
-      --   on_attach = function(client, bufnr)
-      --     client.server_capabilities.documentFormattingProvider = false
-      --     client.server_capabilities.documentRangeFormattingProvider = false
-      --   end,
-      -- },
       gopls = {
         settings = {
           gofumpt = true,
@@ -183,6 +169,8 @@ return { -- LSP Configuration & Plugins
     require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
     require('mason-lspconfig').setup {
+      automatic_installation = true,
+      ensure_installed = servers,
       handlers = {
         function(server_name)
           local server = servers[server_name] or {}

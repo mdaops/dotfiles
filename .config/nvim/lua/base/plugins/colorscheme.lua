@@ -23,8 +23,8 @@ return {
         dim_inactive = false, -- dims inactive windows
         lualine_bold = true, -- When `true`, section headers in the lualine theme will be bold
       }
-      -- vim.cmd.hi 'Comment gui=none'
-      -- vim.cmd.colorscheme 'tokyonight-night'
+      vim.cmd.hi 'Comment gui=none'
+      vim.cmd.colorscheme 'tokyonight-night'
     end,
   },
   {
@@ -56,6 +56,8 @@ return {
           end,
         },
       }
+      -- vim.cmd.colorscheme 'cyberdream'
+      -- vim.cmd.hi 'Comment gui=none'
     end,
   },
   {
@@ -90,8 +92,6 @@ return {
           },
         },
       }
-      vim.cmd.colorscheme 'catppuccin-mocha'
-      vim.cmd.hi 'Comment gui=none'
     end,
   },
   {
