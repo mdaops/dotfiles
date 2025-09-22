@@ -1,0 +1,5 @@
+./lazygit/state.yml
+./.config/gh/*
+./.config/configstore/*
+./.config/argocd/
+./.config/gcloud/
