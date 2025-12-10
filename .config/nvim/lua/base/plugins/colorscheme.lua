@@ -7,7 +7,7 @@ return {
     config = function()
       require('tokyonight').setup {
         style = 'night', -- The theme comes in three styles, `storm`, `moon`, a darker variant `night` and `day`
-        transparent = false, -- Enable this to disable setting the background color
+        transparent = true, -- Enable this to disable setting the background color
         terminal_colors = true, -- Configure the colors used when opening a `:terminal` in [Neovim](https://github.com/neovim/neovim)
         styles = {
           comments = { italic = true },
@@ -41,7 +41,7 @@ return {
           lualine_bold = true, -- When `true`, section headers in the lualine
         },
       }
-      vim.cmd.colorscheme 'onedark_dark'
+      -- vim.cmd.colorscheme 'onedark_dark'
     end,
   },
   {
@@ -110,6 +110,22 @@ return {
         },
       }
       vim.cmd.hi 'Comment gui=none'
+      local palette = require('catppuccin.palettes').get_palette 'macchiato'
+      vim.cmd.colorscheme 'catppuccin-macchiato'
+
+      -- Telescope highlights to match editor background
+      vim.api.nvim_set_hl(0, 'TelescopeNormal', { bg = palette.base })
+      vim.api.nvim_set_hl(0, 'TelescopeBorder', { fg = palette.blue, bg = palette.base })
+      vim.api.nvim_set_hl(0, 'TelescopePromptNormal', { bg = palette.base })
+      vim.api.nvim_set_hl(0, 'TelescopePromptBorder', { fg = palette.blue, bg = palette.base })
+      vim.api.nvim_set_hl(0, 'TelescopeResultsNormal', { bg = palette.base })
+      vim.api.nvim_set_hl(0, 'TelescopeResultsBorder', { fg = palette.blue, bg = palette.base })
+      vim.api.nvim_set_hl(0, 'TelescopePreviewNormal', { bg = palette.base })
+      vim.api.nvim_set_hl(0, 'TelescopePreviewBorder', { fg = palette.blue, bg = palette.base })
+      vim.api.nvim_set_hl(0, 'TelescopeTitle', { fg = palette.mauve, bg = palette.base })
+      vim.api.nvim_set_hl(0, 'TelescopePromptTitle', { fg = palette.mauve, bg = palette.base })
+      vim.api.nvim_set_hl(0, 'TelescopeResultsTitle', { fg = palette.mauve, bg = palette.base })
+      vim.api.nvim_set_hl(0, 'TelescopePreviewTitle', { fg = palette.mauve, bg = palette.base })
     end,
   },
   {
@@ -166,14 +182,13 @@ return {
         invert_signs = false,
         invert_tabline = false,
         invert_intend_guides = false,
-        inverse = true, -- invert background for search, diffs, statuslines and errors
+        inverse = false, -- invert background for search, diffs, statuslines and errors
         contrast = '', -- can be "hard", "soft" or empty string
         palette_overrides = {},
         overrides = {},
         dim_inactive = false,
-        transparent_mode = false,
+        transparent_mode = true,
       }
-      -- vim.cmd 'colorscheme gruvbox'
     end,
   },
 }
