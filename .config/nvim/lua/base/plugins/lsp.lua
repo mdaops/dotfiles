@@ -86,6 +86,8 @@ return { -- LSP Configuration & Plugins
       },
       svelte = {
         settings = {},
+        filetypes = { 'svelte' },
+        root_dir = require('lspconfig.util').root_pattern('svelte.config.js', 'package.json', '.git'),
       },
       tailwindcss = {
         settings = {},
@@ -171,18 +173,14 @@ return { -- LSP Configuration & Plugins
       cmd = { '/usr/local/bin/kcl-language-server' },
       root_dir = require('lspconfig.util').root_pattern('.git', 'kcl.mod'),
     }
+
     require('lspconfig').lexical.setup {
-      cmd = { '/home/dev/lexical/_build/dev/package/lexical/bin/start_lexical.sh' },
+      cmd = { '/home/dev/expert/apps/expert/burrito_out/expert_linux_amd64' },
       root_dir = function(fname)
         return require('lspconfig').util.root_pattern('mix.exs', '.git')(fname) or vim.loop.cwd()
       end,
       filetypes = { 'elixir', 'eelixir', 'heex' },
-      settings = {
-        dialyzerEnabled = true,
-        fetchDeps = false,
-        enableTestLenses = false,
-        suggestSpecs = false,
-      },
+      settings = {},
     }
 
     require('mason-tool-installer').setup { ensure_installed = ensure_installed }
@@ -195,11 +193,6 @@ return { -- LSP Configuration & Plugins
           local server = servers[server_name] or {}
           server.capabilities = vim.tbl_deep_extend('force', {}, capabilities, server.capabilities or {})
           require('lspconfig')[server_name].setup(server)
-        end,
-        ['kcl'] = function()
-          local server = servers['kcl'] or {}
-          server.capabilities = vim.tbl_deep_extend('force', {}, capabilities, server.capabilities or {})
-          require('lspconfig')['kcl'].setup(server)
         end,
         ['gopls'] = function()
           local server = servers['gopls'] or {}
