@@ -3,3 +3,5 @@
 ./.config/configstore/*
 ./.config/argocd/
 ./.config/gcloud/
+.config/tmux/plugins/
+.config/nushell/history.txt
