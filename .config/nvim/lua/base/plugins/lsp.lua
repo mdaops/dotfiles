@@ -76,9 +76,11 @@ return { -- LSP Configuration & Plugins
 
     local servers = {
       zls = {
+        cmd = { vim.fn.expand '~/.local/bin/zls' },
         settings = {
+          zig_exe_path = vim.fn.expand '~/.local/bin/zig',
           enable_autofix = true,
-          enable_inhay_hints = true,
+          enable_inlay_hints = true,
           inlay_hints_show_variable_type_hints = true,
           inlay_hints_show_struct_literal_field_type = true,
           inlay_hints_show_parameter_name = true,
@@ -92,8 +94,13 @@ return { -- LSP Configuration & Plugins
       tailwindcss = {
         settings = {},
       },
-      ts_ls = {
-        settings = {},
+      vtsls = {
+        settings = {
+          vtsls = {
+            autoUseWorkspaceTsdk = true,
+          },
+        },
+        filetypes = { 'javascript', 'javascriptreact', 'typescript', 'typescriptreact' },
       },
       gopls = {
         cmd = { 'gopls' },
@@ -160,7 +167,11 @@ return { -- LSP Configuration & Plugins
     }
     require('mason').setup()
 
-    local ensure_installed = vim.tbl_keys(servers or {})
+    local mason_lsp_servers = vim.tbl_filter(function(server_name)
+      return server_name ~= 'zls'
+    end, vim.tbl_keys(servers or {}))
+
+    local ensure_installed = vim.deepcopy(mason_lsp_servers)
     vim.list_extend(ensure_installed, {
       'stylua',
       'goimports',
@@ -169,49 +180,50 @@ return { -- LSP Configuration & Plugins
       'gomodifytags',
     })
 
-    require('lspconfig').kcl.setup {
+    for server_name, server in pairs(servers) do
+      server.capabilities = vim.tbl_deep_extend('force', {}, capabilities, server.capabilities or {})
+      vim.lsp.config(server_name, server)
+      vim.lsp.enable(server_name)
+    end
+
+    vim.lsp.config('kcl', {
       cmd = { '/usr/local/bin/kcl-language-server' },
       root_dir = require('lspconfig.util').root_pattern('.git', 'kcl.mod'),
-    }
+    })
+    vim.lsp.enable 'kcl'
 
-    require('lspconfig').lexical.setup {
+    vim.lsp.config('lexical', {
       cmd = { '/home/dev/expert/apps/expert/burrito_out/expert_linux_amd64' },
       root_dir = function(fname)
         return require('lspconfig').util.root_pattern('mix.exs', '.git')(fname) or vim.loop.cwd()
       end,
       filetypes = { 'elixir', 'eelixir', 'heex' },
       settings = {},
-    }
+    })
+    vim.lsp.enable 'lexical'
+
+    vim.lsp.on_attach(function(client, _)
+      if client.name ~= 'gopls' or client.server_capabilities.semanticTokensProvider then
+        return
+      end
+
+      local semantic = client.config.capabilities.textDocument.semanticTokens
+      client.server_capabilities.semanticTokensProvider = {
+        full = true,
+        legend = {
+          tokenTypes = semantic.tokenTypes,
+          tokenModifiers = semantic.tokenModifiers,
+        },
+        range = true,
+      }
+    end)
 
     require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
     require('mason-lspconfig').setup {
-      automatic_installation = true,
-      ensure_installed = servers,
-      handlers = {
-        function(server_name)
-          local server = servers[server_name] or {}
-          server.capabilities = vim.tbl_deep_extend('force', {}, capabilities, server.capabilities or {})
-          require('lspconfig')[server_name].setup(server)
-        end,
-        ['gopls'] = function()
-          local server = servers['gopls'] or {}
-          server.capabilities = vim.tbl_deep_extend('force', {}, capabilities, server.capabilities or {})
-          require('lspconfig')['gopls'].setup(server)
-          vim.lsp.on_attach(function(client, _)
-            if not client.server_capabilities.semanticTokensProvider then
-              local semantic = client.config.capabilities.textDocument.semanticTokens
-              client.server_capabilities.semanticTokensProvider = {
-                full = true,
-                legend = {
-                  tokenTypes = semantic.tokenTypes,
-                  tokenModifiers = semantic.tokenModifiers,
-                },
-                range = true,
-              }
-            end
-          end)
-        end,
+      ensure_installed = mason_lsp_servers,
+      automatic_enable = {
+        exclude = vim.tbl_keys(servers or {}),
       },
     }
   end,

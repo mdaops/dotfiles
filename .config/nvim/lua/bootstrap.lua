@@ -5,11 +5,16 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require('lazy').setup {
+local lazy_imports = {
   { import = 'base.plugins' },
   { import = 'custom.plugins' },
-  { import = 'custom.plugins.lang.elixir' },
 }
+
+if vim.uv.fs_stat(vim.fn.stdpath 'config' .. '/lua/custom/plugins/lang/elixir.lua') then
+  table.insert(lazy_imports, { import = 'custom.plugins.lang.elixir' })
+end
+
+require('lazy').setup(lazy_imports)
 
 vim.filetype.add {
   extension = {

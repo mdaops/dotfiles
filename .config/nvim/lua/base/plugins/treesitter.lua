@@ -10,6 +10,7 @@ return {
         'html',
         'lua',
         'markdown',
+        'proto',
         'go',
         'gomod',
         'gowork',
