@@ -1,3 +1,5 @@
+vim.filetype.add { extension = { wit = 'wit', mdx = 'mdx' } }
+
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 vim.g.noswap = true

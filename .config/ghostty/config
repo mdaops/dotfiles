@@ -49,9 +49,9 @@
 # resize-overlay-duration = 4s 200ms
 
 font-family = JetBrainsMono Nerd Font
-font-size = 12
-theme = Catppuccin Macchiato
-background-opacity = 0.4
+font-size = 16
+theme = TokyoNight Night
+background-opacity = 1.0
 
 # Prevent ghostty from hijacking super key combos (let Hyprland handle them)
 # Using 'ignore' instead of 'unbind' -- unbind passes printable keys to the
