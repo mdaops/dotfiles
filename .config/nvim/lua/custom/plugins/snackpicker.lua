@@ -9,6 +9,7 @@ return {
       example = 'github',
     },
     explorer = { enabled = true },
+    image = { enabled = true },
     indent = { enabled = true },
     input = { enabled = true },
     picker = { enabled = true },
