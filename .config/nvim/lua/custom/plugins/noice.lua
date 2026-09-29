@@ -13,6 +13,34 @@ return {
           ['vim.lsp.util.stylize_markdown'] = true,
           ['cmp.entry.get_documentation'] = true,
         },
+        hover = {
+          silent = true,
+        },
+      },
+      views = {
+        hover = {
+          relative = 'cursor',
+          anchor = 'auto',
+          position = { row = 1, col = 1 },
+          size = {
+            width = 'auto',
+            height = 'auto',
+            max_width = 88,
+            max_height = 16,
+          },
+          border = {
+            style = 'rounded',
+            padding = { 0, 1 },
+          },
+          win_options = {
+            wrap = true,
+            linebreak = true,
+            winhighlight = {
+              Normal = 'NormalFloat',
+              FloatBorder = 'FloatBorder',
+            },
+          },
+        },
       },
       presets = {
         bottom_search = true,

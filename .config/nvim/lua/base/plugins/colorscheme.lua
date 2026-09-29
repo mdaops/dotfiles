@@ -7,7 +7,7 @@ return {
     config = function()
       require('tokyonight').setup {
         style = 'night', -- The theme comes in three styles, `storm`, `moon`, a darker variant `night` and `day`
-        transparent = true, -- Enable this to disable setting the background color
+        transparent = false, -- Enable this to disable setting the background color
         terminal_colors = true, -- Configure the colors used when opening a `:terminal` in [Neovim](https://github.com/neovim/neovim)
         styles = {
           comments = { italic = true },
@@ -73,8 +73,9 @@ return {
           end,
         },
       }
-      vim.cmd.colorscheme 'cyberdream'
+      -- vim.cmd.colorscheme 'cyberdream'
       vim.cmd.hi 'Comment gui=none'
+      vim.cmd.colorscheme 'tokyonight-night'
     end,
   },
   {

@@ -9,6 +9,35 @@ return { -- LSP Configuration & Plugins
     { 'folke/neodev.nvim', opts = {} },
   },
   config = function()
+    local hover = vim.lsp.handlers.hover
+    local hover_opts = function()
+      local width = vim.api.nvim_win_get_width(0)
+      local height = vim.api.nvim_win_get_height(0)
+
+      local max_width = math.min(80, math.max(20, math.floor(width * 0.6)))
+      local max_height = math.min(20, math.max(8, math.floor(height * 0.5)))
+
+      if width > 8 then
+        max_width = math.min(max_width, width - 4)
+      end
+
+      if height > 4 then
+        max_height = math.min(max_height, height - 2)
+      end
+
+      return {
+        border = 'rounded',
+        focusable = false,
+        max_width = max_width,
+        max_height = max_height,
+      }
+    end
+
+    vim.lsp.handlers['textDocument/hover'] = function(err, result, ctx, config)
+      config = vim.tbl_deep_extend('force', hover_opts(), config or {})
+      return hover(err, result, ctx, config)
+    end
+
     vim.api.nvim_create_autocmd('LspAttach', {
       group = vim.api.nvim_create_augroup('kickstart-lsp-attach', { clear = true }),
       callback = function(event)
@@ -75,6 +104,26 @@ return { -- LSP Configuration & Plugins
     capabilities = vim.tbl_deep_extend('force', capabilities, require('cmp_nvim_lsp').default_capabilities())
 
     local servers = {
+      rust_analyzer = {},
+      mdx_analyzer = {
+        before_init = function(_, config)
+          local tsdk = require('lspconfig.util').get_typescript_server_path(config.root_dir)
+          if tsdk == '' then
+            -- Documentation-only projects may not have their own TypeScript SDK.
+            local vtsls = vim.fn.stdpath 'data' .. '/mason/packages/vtsls/node_modules/'
+            for _, path in ipairs {
+              vtsls .. 'typescript/lib',
+              vtsls .. '@vtsls/language-server/node_modules/typescript/lib',
+            } do
+              if vim.uv.fs_stat(path .. '/typescript.js') then
+                tsdk = path
+                break
+              end
+            end
+          end
+          config.init_options.typescript.tsdk = tsdk
+        end,
+      },
       zls = {
         cmd = { vim.fn.expand '~/.local/bin/zls' },
         settings = {
@@ -144,6 +193,14 @@ return { -- LSP Configuration & Plugins
       terraformls = {
         settings = {},
       },
+      postgres_lsp = {
+        root_dir = require('lspconfig.util').root_pattern('postgres-language-server.jsonc', 'postgrestools.jsonc', '.git'),
+        settings = {},
+      },
+      sqls = {
+        root_dir = require('lspconfig.util').root_pattern('config.yml', '.sqllsrc.json', '.git'),
+        settings = {},
+      },
       lua_ls = {
         settings = {
           Lua = {
@@ -174,10 +231,14 @@ return { -- LSP Configuration & Plugins
     local ensure_installed = vim.deepcopy(mason_lsp_servers)
     vim.list_extend(ensure_installed, {
       'stylua',
+      'prettier',
       'goimports',
       'gofumpt',
       'golines',
       'gomodifytags',
+      'sqlfluff',
+      'pgformatter',
+      'sqlls',
     })
 
     for server_name, server in pairs(servers) do
@@ -186,21 +247,62 @@ return { -- LSP Configuration & Plugins
       vim.lsp.enable(server_name)
     end
 
-    vim.lsp.config('kcl', {
-      cmd = { '/usr/local/bin/kcl-language-server' },
-      root_dir = require('lspconfig.util').root_pattern('.git', 'kcl.mod'),
+    vim.lsp.config('wit', {
+      cmd = { vim.fn.expand('~/.cargo/bin/wit-language-server'), '--stdio' },
+      capabilities = capabilities,
+      filetypes = { 'wit' },
+      root_markers = { 'wit.toml', '.git' },
     })
-    vim.lsp.enable 'kcl'
+    vim.lsp.enable 'wit'
 
-    vim.lsp.config('lexical', {
-      cmd = { '/home/dev/expert/apps/expert/burrito_out/expert_linux_amd64' },
-      root_dir = function(fname)
-        return require('lspconfig').util.root_pattern('mix.exs', '.git')(fname) or vim.loop.cwd()
-      end,
-      filetypes = { 'elixir', 'eelixir', 'heex' },
-      settings = {},
+    local kcl_server = '/usr/local/bin/kcl-language-server'
+    if vim.fn.executable(kcl_server) == 1 then
+      vim.lsp.config('kcl', {
+        cmd = { kcl_server },
+        root_dir = require('lspconfig.util').root_pattern('.git', 'kcl.mod'),
+      })
+      vim.lsp.enable 'kcl'
+    end
+
+    local lexical_server = '/home/dev/expert/apps/expert/burrito_out/expert_linux_amd64'
+    if vim.fn.executable(lexical_server) == 1 then
+      vim.lsp.config('lexical', {
+        cmd = { lexical_server },
+        root_dir = function(fname)
+          return require('lspconfig').util.root_pattern('mix.exs', '.git')(fname) or vim.loop.cwd()
+        end,
+        filetypes = { 'elixir', 'eelixir', 'heex' },
+        settings = {},
+      })
+      vim.lsp.enable 'lexical'
+    end
+
+    local function start_sql_servers(args)
+      local bufnr = args and args.buf or vim.api.nvim_get_current_buf()
+      if vim.bo[bufnr].filetype ~= 'sql' then
+        return
+      end
+
+      local root_dir = vim.fs.root(bufnr, { 'postgres-language-server.jsonc', 'postgrestools.jsonc', 'config.yml', '.sqllsrc.json', '.git' })
+        or vim.fs.dirname(vim.api.nvim_buf_get_name(bufnr))
+
+      for _, server_name in ipairs { 'postgres_lsp', 'sqls' } do
+        if not vim.iter(vim.lsp.get_clients { bufnr = bufnr }):any(function(client)
+          return client.name == server_name
+        end) then
+          local config = vim.deepcopy(vim.lsp.config[server_name])
+          config.root_dir = root_dir
+          vim.lsp.start(config, { bufnr = bufnr })
+        end
+      end
+    end
+
+    vim.api.nvim_create_autocmd('FileType', {
+      group = vim.api.nvim_create_augroup('sql-lsp-start', { clear = true }),
+      pattern = 'sql',
+      callback = start_sql_servers,
     })
-    vim.lsp.enable 'lexical'
+    start_sql_servers()
 
     vim.lsp.on_attach(function(client, _)
       if client.name ~= 'gopls' or client.server_capabilities.semanticTokensProvider then
