@@ -23,6 +23,31 @@ $env.EDITOR = "nvim"
 $env.BUN_INSTALL = ($env.HOME | path join ".bun")
 $env.PATH = ($env.PATH | prepend ($env.BUN_INSTALL | path join "bin"))
 
+# fnm (Fast Node Manager)
+$env.FNM_PATH = ($env.HOME | path join ".local" "share" "fnm")
+if ($env.FNM_PATH | path exists) {
+  $env.PATH = ($env.PATH | prepend $env.FNM_PATH)
+  ^fnm env --json | from json | load-env
+  $env.PATH = ($env.PATH | prepend ($env.FNM_MULTISHELL_PATH | path join "bin"))
+}
+
+# Direnv
+$env.config = ($env.config | upsert hooks.pre_prompt (
+  $env.config.hooks.pre_prompt | append {||
+    let direnv = (direnv export json | from json | default {})
+    if ($direnv | is-not-empty) { $direnv | load-env }
+  }
+))
+
+# fnm use-on-cd hook
+$env.config = ($env.config | upsert hooks.env_change.PWD (
+  ($env.config.hooks.env_change | get -o PWD | default []) | append {|before, after|
+    if ('FNM_DIR' in $env) and ([.nvmrc .node-version] | any {|f| ($after | path join $f | path exists)}) {
+      ^fnm use --silent-if-unchanged
+    }
+  }
+))
+
 # Aliases
 alias vim = nvim
 alias v = nvim
@@ -30,3 +55,4 @@ alias tf = terraform
 alias k = kubectl
 alias ns = kubens
 alias cx = kubectx
+source "~/.cargo/env.nu"
