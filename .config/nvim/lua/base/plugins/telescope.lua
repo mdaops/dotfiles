@@ -25,7 +25,7 @@ return {
         },
         ['file_browser'] = {},
         ['terraform_doc'] = {
-          url_open_command = 'xdg-open',
+          url_open_command = vim.fn.has 'macunix' == 1 and 'open' or 'xdg-open',
           latest_provider_symbol = '  ',
         },
       },

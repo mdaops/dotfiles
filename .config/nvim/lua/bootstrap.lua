@@ -10,10 +10,6 @@ local lazy_imports = {
   { import = 'custom.plugins' },
 }
 
-if vim.uv.fs_stat(vim.fn.stdpath 'config' .. '/lua/custom/plugins/lang/elixir.lua') then
-  table.insert(lazy_imports, { import = 'custom.plugins.lang.elixir' })
-end
-
 require('lazy').setup(lazy_imports)
 
 vim.filetype.add {

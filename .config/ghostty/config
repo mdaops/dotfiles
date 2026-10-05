@@ -50,7 +50,7 @@
 
 font-family = JetBrainsMono Nerd Font
 font-size = 16
-theme = TokyoNight Night
+theme = Ayu
 background-opacity = 1.0
 
 # Prevent ghostty from hijacking super key combos (let Hyprland handle them)
