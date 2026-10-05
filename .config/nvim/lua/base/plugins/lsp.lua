@@ -103,8 +103,27 @@ return { -- LSP Configuration & Plugins
     local capabilities = vim.lsp.protocol.make_client_capabilities()
     capabilities = vim.tbl_deep_extend('force', capabilities, require('cmp_nvim_lsp').default_capabilities())
 
+    -- Prefer PATH (Homebrew, Nix or Mason), then existing local installations.
+    local function executable(name, fallback)
+      local path = vim.fn.exepath(name)
+      if path ~= '' then
+        return path
+      end
+      if fallback and vim.fn.executable(vim.fn.expand(fallback)) == 1 then
+        return vim.fn.expand(fallback)
+      end
+    end
+
     local servers = {
-      rust_analyzer = {},
+      rust_analyzer = {
+        settings = {
+          ['rust-analyzer'] = {
+            -- Work around rust-analyzer 1.98.1 panicking with "failed to unify
+            -- type owners" while searching for replacements for `_` expressions.
+            assist = { termSearch = { fuel = 0 } },
+          },
+        },
+      },
       mdx_analyzer = {
         before_init = function(_, config)
           local tsdk = require('lspconfig.util').get_typescript_server_path(config.root_dir)
@@ -125,9 +144,9 @@ return { -- LSP Configuration & Plugins
         end,
       },
       zls = {
-        cmd = { vim.fn.expand '~/.local/bin/zls' },
+        cmd = { executable('zls', '~/.local/bin/zls') or 'zls' },
         settings = {
-          zig_exe_path = vim.fn.expand '~/.local/bin/zig',
+          zig_exe_path = executable('zig', '~/.local/bin/zig'),
           enable_autofix = true,
           enable_inlay_hints = true,
           inlay_hints_show_variable_type_hints = true,
@@ -247,34 +266,15 @@ return { -- LSP Configuration & Plugins
       vim.lsp.enable(server_name)
     end
 
-    vim.lsp.config('wit', {
-      cmd = { vim.fn.expand('~/.cargo/bin/wit-language-server'), '--stdio' },
-      capabilities = capabilities,
-      filetypes = { 'wit' },
-      root_markers = { 'wit.toml', '.git' },
-    })
-    vim.lsp.enable 'wit'
-
-    local kcl_server = '/usr/local/bin/kcl-language-server'
-    if vim.fn.executable(kcl_server) == 1 then
-      vim.lsp.config('kcl', {
-        cmd = { kcl_server },
-        root_dir = require('lspconfig.util').root_pattern('.git', 'kcl.mod'),
+    local wit_server = executable('wit-language-server', '~/.cargo/bin/wit-language-server')
+    if wit_server then
+      vim.lsp.config('wit', {
+        cmd = { wit_server, '--stdio' },
+        capabilities = capabilities,
+        filetypes = { 'wit' },
+        root_markers = { 'wit.toml', '.git' },
       })
-      vim.lsp.enable 'kcl'
-    end
-
-    local lexical_server = '/home/dev/expert/apps/expert/burrito_out/expert_linux_amd64'
-    if vim.fn.executable(lexical_server) == 1 then
-      vim.lsp.config('lexical', {
-        cmd = { lexical_server },
-        root_dir = function(fname)
-          return require('lspconfig').util.root_pattern('mix.exs', '.git')(fname) or vim.loop.cwd()
-        end,
-        filetypes = { 'elixir', 'eelixir', 'heex' },
-        settings = {},
-      })
-      vim.lsp.enable 'lexical'
+      vim.lsp.enable 'wit'
     end
 
     local function start_sql_servers(args)
@@ -304,21 +304,25 @@ return { -- LSP Configuration & Plugins
     })
     start_sql_servers()
 
-    vim.lsp.on_attach(function(client, _)
-      if client.name ~= 'gopls' or client.server_capabilities.semanticTokensProvider then
-        return
-      end
+    vim.api.nvim_create_autocmd('LspAttach', {
+      group = vim.api.nvim_create_augroup('gopls-semantic-tokens', { clear = true }),
+      callback = function(args)
+        local client = vim.lsp.get_client_by_id(args.data.client_id)
+        if not client or client.name ~= 'gopls' or client.server_capabilities.semanticTokensProvider then
+          return
+        end
 
-      local semantic = client.config.capabilities.textDocument.semanticTokens
-      client.server_capabilities.semanticTokensProvider = {
-        full = true,
-        legend = {
-          tokenTypes = semantic.tokenTypes,
-          tokenModifiers = semantic.tokenModifiers,
-        },
-        range = true,
-      }
-    end)
+        local semantic = client.config.capabilities.textDocument.semanticTokens
+        client.server_capabilities.semanticTokensProvider = {
+          full = true,
+          legend = {
+            tokenTypes = semantic.tokenTypes,
+            tokenModifiers = semantic.tokenModifiers,
+          },
+          range = true,
+        }
+      end,
+    })
 
     require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 

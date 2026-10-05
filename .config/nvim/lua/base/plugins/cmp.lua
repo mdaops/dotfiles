@@ -48,24 +48,7 @@ return {
       TypeParameter = 'type',
     }
 
-    vim.api.nvim_set_hl(0, 'CmpItemMenu', { link = 'Comment' })
-    vim.api.nvim_set_hl(0, 'CmpItemKind', { link = 'Comment' })
-    vim.api.nvim_set_hl(0, 'CmpItemAbbrMatch', { link = 'Type' })
-    vim.api.nvim_set_hl(0, 'CmpItemAbbrMatchFuzzy', { link = 'Type' })
-    vim.api.nvim_set_hl(0, 'CmpItemKindFunction', { link = 'Function' })
-    vim.api.nvim_set_hl(0, 'CmpItemKindMethod', { link = 'Function' })
-    vim.api.nvim_set_hl(0, 'CmpItemKindConstructor', { link = 'Function' })
-    vim.api.nvim_set_hl(0, 'CmpItemKindVariable', { link = 'Identifier' })
-    vim.api.nvim_set_hl(0, 'CmpItemKindField', { link = 'Identifier' })
-    vim.api.nvim_set_hl(0, 'CmpItemKindProperty', { link = 'Identifier' })
-    vim.api.nvim_set_hl(0, 'CmpItemKindClass', { link = 'Type' })
-    vim.api.nvim_set_hl(0, 'CmpItemKindInterface', { link = 'Type' })
-    vim.api.nvim_set_hl(0, 'CmpItemKindStruct', { link = 'Type' })
-    vim.api.nvim_set_hl(0, 'CmpItemKindModule', { link = 'Directory' })
-    vim.api.nvim_set_hl(0, 'CmpItemKindFile', { link = 'Directory' })
-    vim.api.nvim_set_hl(0, 'CmpItemKindFolder', { link = 'Directory' })
-    vim.api.nvim_set_hl(0, 'CmpItemKindKeyword', { link = 'Keyword' })
-    vim.api.nvim_set_hl(0, 'CmpItemKindSnippet', { link = 'Comment' })
+    -- Let the active colourscheme style completion items.
 
     cmp.setup {
       snippet = {
