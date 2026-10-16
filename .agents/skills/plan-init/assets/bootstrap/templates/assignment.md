@@ -7,7 +7,7 @@ Plans repository / integration branch:
 Handoff delivery branch or PR:
 Code repository / branch / PR:
 Publication authority and route:
-Local binding record: local/ (checkout paths, machine/session/workspace/pane IDs)
+Local binding record: local/ (checkout paths, machine/session/workspace/tab/pane IDs)
 Coordinator scope and ownership revision:
 Notification authority:
 Handoff path: handoffs/<plan-id>--<assignment-id>.md

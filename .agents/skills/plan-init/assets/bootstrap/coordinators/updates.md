@@ -6,7 +6,7 @@ Durable plans and assignment handoffs hold work state. Herdr manages running age
 
 Use a clearly named Herdr workspace for each coordinator scope (for example, the scope ID). A scope may span initiatives and repositories; products are optional grouping. Inspect existing workspaces and verified bindings before creating one. Reuse the matching workspace on resumption; do not create one per plan. Record machine/session/workspace/coordinator identity in ignored local configuration. A matching name alone is insufficient to assume ownership.
 
-When runtime setup is authorized, create the scope workspace if missing and place the coordinator and its workers in it. Use installed Herdr help for workspace creation and pane movement; preserve the coordinator process/history and the user's focus where possible. After moving a pane, use returned live IDs and refresh bindings. Verify all assigned workers belong to the intended workspace before dispatch. If control is unavailable, report grouping as pending rather than claiming it happened.
+When runtime setup is authorized, create the scope workspace if missing and keep a dedicated coordinator tab and a separate labelled tab per worker in it. This user-selected topology overrides the generic Herdr sibling-pane default; use splits only when explicitly useful or requested. Create each worker tab with its assigned checkout as cwd and preserve user focus; launch into the returned root pane. Record tab, pane and agent identities locally. Use installed Herdr help for workspace creation and pane movement; preserve the coordinator process/history and the user's focus where possible. After moving a pane, use returned live IDs and refresh bindings. Verify all assigned workers belong to the intended workspace before dispatch. If control is unavailable, report grouping as pending rather than claiming it happened.
 
 ## Worker updates
 
@@ -17,6 +17,14 @@ Verify the target's machine, session and current agent identity before sending. 
 ## Coordinator reconciliation
 
 Sync and read active plans/handoffs on startup, resumption, before dispatch and after notifications. Verify evidence and record each assignment's latest reviewed revision/time. Already-reviewed updates cause no duplicate dispatch or lifecycle action. Acknowledgement does not resolve an outstanding user decision. Herdr idle/done means a settled UI state, not proof of task completion.
+
+## Worker tab lifecycle
+
+The coordinator chooses when to close its managed worker tabs without asking for approval each time. After reconciliation and required publication, close a finished worker tab when its handoff, evidence, decisions and next action are durable and no session-dependent work remains. Preserve uncommitted files and unsaved terminal/editor content before closing; closure does not authorize deleting a checkout or discarding work. Idle/done alone never establishes completion.
+
+Keep tabs with active commands or background jobs, unresolved blockers, or pending review/approval that requires the session. Reassess after those needs resolve; closing a tab does not itself complete a plan. Workers report readiness and leave cleanup to the coordinator.
+
+Before closing, rediscover and verify the machine/session, tab, all contained panes and agent identities against the assignment's local bindings. Close only a worker tab created for this scope or explicitly transferred into its management, with no unrelated occupants. Use installed Herdr help for the close operation, verify the result, and retire its local binding. On uncertain outcomes inspect before retrying. Never close the coordinator tab, unrelated tabs, application window or server as worker cleanup; retain the workspace while the scope is active. If runtime access is unavailable, report cleanup pending.
 
 ## Optional fallback
 
