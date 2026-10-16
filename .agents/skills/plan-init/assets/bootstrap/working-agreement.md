@@ -8,6 +8,8 @@ A coordinator manages multiple initiatives and their assignments. Workers carry 
 
 The coordinator is replaceable. Durable files, linked evidence, and checkpoints must be enough for a new session to resume.
 
+
+
 ## Context
 
 Read this agreement, the plan, its relevant shared context, and the latest assignment handoff. Verify changeable facts against current sources. Keep hypotheses separate from established decisions.
@@ -39,3 +41,7 @@ Check the plan's completion criteria against evidence. An agent stopping, a PR o
 Experiments need a hypothesis, stopping condition, and findings. Negative results can satisfy an experiment plan.
 
 Retrospectives propose specific, evidence-backed changes. Do not silently rewrite working preferences based on one incident.
+
+## Coordination and publication
+
+Follow coordinators/updates.md for workspace grouping, handoffs, notifications and optional fallback; follow coordinators/sync.md for durable publication and ownership transfer. Configure the scope publication route from user authorization once. Machine-local runtime hints never replace synced evidence. No watcher is installed by these files.

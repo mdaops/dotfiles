@@ -24,7 +24,7 @@ skills. These commands skip any existing destination; inspect conflicts yourself
 
 ```sh
 mkdir -p "$HOME/.agents/skills" "$HOME/.claude/skills"
-for source in "$PWD"/.agents/skills/plan-*; do
+for source in "$PWD"/.agents/skills/*; do
   name=$(basename "$source")
   for root in "$HOME/.agents/skills" "$HOME/.claude/skills"; do
     target="$root/$name"
@@ -53,7 +53,7 @@ $roots = @(
 )
 foreach ($root in $roots) {
   New-Item -ItemType Directory -Force -Path $root | Out-Null
-  foreach ($skill in Get-ChildItem -Directory .agents\skills\plan-*) {
+  foreach ($skill in Get-ChildItem -Directory .agents\skills) {
     $target = Join-Path $root $skill.Name
     if (Test-Path -LiteralPath $target) {
       Write-Output "Already exists; inspect: $target"
@@ -70,16 +70,17 @@ Claude Code: `/plan-add describe the outcome`.
 
 Pi: `/skill:plan-add describe the outcome`.
 
-The remaining names are `plan-init`, `plan-write`, `plan-dispatch`,
-`plan-status`, `plan-sync`, and `plan-retro`. Reload or restart the runner
-after installation and check that the skills appear. Pi supports `/reload`.
+The remaining workflow skills are plan-init, plan-write, plan-dispatch,
+plan-status, plan-sync, plan-retro, and coordinator-start. The herdr skill
+provides runtime control. Reload or restart after installation; Pi supports /reload.
 
-The skills do not install a background coordinator or automatically launch
-workers. Start a coordinator session with the plans checkout available and
-ask it to use plan-status, then dispatch specific authorized work.
+Start with /coordinator-start oxlev in Claude Code or /skill:coordinator-start oxlev
+in Pi. Plans and handoffs synchronize through the plans remote. Herdr groups each coordinator and its workers in a named scope workspace.
+See [Herdr setup](herdr.md). No background watcher is installed.
 
-Runner installation has not been tested in live Pi or Claude Code sessions on
-this Windows machine. Skill files have been checked with the skill validator.
+Pi on Windows was trialled for dispatch, handoff, idle wakeup, duplicate handling and fresh-session recovery. Claude Code runtime behaviour has not been trialled here. Skills are checked with the skill validator.
 
 References: [Pi skills](https://github.com/badlogic/pi-mono/blob/main/packages/coding-agent/docs/skills.md)
 and [Claude Code skills](https://code.claude.com/docs/en/skills).
+
+Use plan-sync before dispatch, after worker updates and before moving machines. Configure publication authority once in the scope profile. Optional fallback uses an explicitly configured existing scheduler; default to five minutes while work is active, one owner, and cancellation on completion/transfer. See the plans repository coordinators/sync.md and coordinators/updates.md.

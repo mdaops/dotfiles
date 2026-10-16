@@ -24,7 +24,7 @@ For experiments, include the hypothesis and stopping condition.
 - [ ] <Observable outcome and how to check it>
 
 ## Assignments
-| ID | Scope | Owner | Session reference | Depends on |
+| ID | Scope | Owner | Handoff delivery ref | Depends on |
 | --- | --- | --- | --- | --- |
 
 ## Current state
@@ -40,3 +40,10 @@ Record source/revision, observed result, and verification limits.
 
 ## Closure
 Outcome, acceptance if required, or reason for discarding.
+
+## Synchronization
+Scope owner / ownership revision:
+Plans delivery branch or PR:
+Latest reviewed handoff revision/time per assignment:
+PR head/check evidence observed at:
+Unsynced changes or sync conflicts:

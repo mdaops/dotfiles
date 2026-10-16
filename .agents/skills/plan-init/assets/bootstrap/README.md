@@ -39,6 +39,7 @@ Product grouping is optional. One coordinator can manage multiple initiatives an
 | plan-status | Report progress, blockers, and decisions waiting on you |
 | plan-sync | Reconcile evidence and update lifecycle state |
 | plan-retro | Propose improvements based on repeated friction |
+| coordinator-start | Resume a coordinator from its scope, plans, and handoffs |
 
 Read [plan-spec.md](plan-spec.md) for the shared contract.
 
