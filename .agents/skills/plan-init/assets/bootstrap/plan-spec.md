@@ -34,9 +34,11 @@ The coordinator reads handoffs, checks evidence where accessible, and updates pl
 
 Before dispatch, check all open plans for conflicting ownership or edits. Reserve the assignment before starting work. If launch fails, record it and release the claim or retain it with an explicit retry action.
 
-Use one coordinator checkout initially. Workers with separate clones can deliver handoff commits or patches for the coordinator to integrate. Do not overwrite others' uncommitted work or force-push to reconcile state.
+Follow coordinators/sync.md for shared or separate checkouts, publication routes, current PR verification and ownership transfer. Durable state must survive moving machines without conversation history. Never overwrite unrelated work or force-push to reconcile state.
 
 README is navigation, not a manually duplicated status dashboard. plan-status derives its report from plan files and handoffs.
+
+
 
 ## Shared context
 
