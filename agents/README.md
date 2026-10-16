@@ -84,3 +84,15 @@ References: [Pi skills](https://github.com/badlogic/pi-mono/blob/main/packages/c
 and [Claude Code skills](https://code.claude.com/docs/en/skills).
 
 Use plan-sync before dispatch, after worker updates and before moving machines. Configure publication authority once in the scope profile. Optional fallback uses an explicitly configured existing scheduler; default to five minutes while work is active, one owner, and cancellation on completion/transfer. See the plans repository coordinators/sync.md and coordinators/updates.md.
+
+## Authoring philosophy and explanations
+
+The authoring-philosophy skill is the shared source for language-independent coding preferences. Load it when designing, authoring or reviewing code; plan-dispatch includes it in coding worker instructions when available. Skill installation alone does not guarantee that every runner loads it on every turn.
+
+Use `/why`, `/how` and `/teach` in Claude Code; in Pi use `/skill:why`, `/skill:how` and `/skill:teach`. Each reads the shared philosophy from its sibling skill, so install all four together.
+
+- `/why did you introduce a queue here?` examines justification and whether it still holds.
+- `/how does this prevent tenants bypassing platform limits?` traces behavior and verifies the claim.
+- `/teach me how this PR changes onboarding` explains the change and material tradeoffs.
+
+Use the worker for implementation details and the coordinator for scope, dependencies and cross-worker decisions. Both must ground answers in inspected evidence and distinguish inferred rationale from documented intent. Explanation alone does not request code changes; explicitly asking for a fix does.
