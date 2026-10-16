@@ -1,10 +1,9 @@
 # Working in this repository
 
-Read working-agreement.md and plan-spec.md before changing plans or coordination state. They are the canonical workflow rules. Read only linked context needed for the current assignment.
+For a startup/status pass, read only the scope profile and targeted plan summaries. Before changing plans or coordination state, read working-agreement.md and plan-spec.md; they are the canonical rules. Do not reread instructions already loaded in this session.
 
+Reusable skills live in mdaops/dotfiles under .agents/skills/. Locate this checkout via PLANS_DIR or an explicit path; never infer a temporary chat directory. Resolve workflow files inside this repository, product code in its own checkout.
 
-Reusable skills are maintained in mdaops/dotfiles under .agents/skills/<name>/SKILL.md. Set PLANS_DIR to this checkout or give its absolute path in the task. Skill references to templates and state resolve within this plans repository, not the skill installation or worker code checkout.
+Read context and full handoffs only for the current assignment. Keep machine-specific paths and runtime bindings in ignored local/. Scope profiles identify sync routes and ownership. Load coordinators/sync.md for synchronization/transfer and coordinators/updates.md for runtime setup/notifications/fallback when those operations are needed.
 
-Keep machine-specific paths in ignored local/machine.md. Record evidence and uncertainty faithfully. Do not infer permission to launch other sessions, send messages, merge, deploy, or expand a task merely from a plan's existence.
-
-For coordinator work, read coordinators/<scope-id>.md and coordinators/updates.md. Plans and handoffs hold durable state; Herdr manages sessions and notifications.
+Startup does not authorize draft research, implementation, dispatch, publication, merge or deployment. Honor existing user authorization for explicitly requested work. Do not treat historical trial records as current assignments.
