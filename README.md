@@ -1,5 +1,11 @@
 # Dotfiles
 
+## Agent planning
+
+Shared Pi and Claude Code planning skills live in `.agents/skills/`.
+See [setup and usage](agents/README.md). Durable work state lives separately
+in `mdaops/plans`, located through `PLANS_DIR` or an explicit task path.
+
 ## Neovim on macOS
 
 Use **Neovim 0.12 or newer**: this configuration uses the current
