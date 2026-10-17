@@ -2,6 +2,9 @@
 
 Plan ID:
 Assignment ID:
+Runner / requested model:
+Verified model identifier / availability evidence:
+Runtime selected-model evidence:
 Logical owner:
 Plans repository / integration branch:
 Handoff delivery branch or PR:
