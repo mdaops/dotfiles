@@ -8,6 +8,14 @@ Use a clearly named Herdr workspace for each coordinator scope (for example, the
 
 When runtime setup is authorized, create the scope workspace if missing and keep a dedicated coordinator tab and by default, a separate labelled tab per worker in it. This user-selected topology overrides the generic Herdr sibling-pane default; the coordinator may choose a split pane when it judges that layout better suited to the work, without additional approval. Use the assigned checkout as cwd and preserve user focus; launch into the returned root pane for a tab or the returned pane for a split. Record tab, pane and agent identities locally. Use installed Herdr help for workspace creation and pane movement; preserve the coordinator process/history and the user's focus where possible. After moving a pane, use returned live IDs and refresh bindings. Verify all assigned workers belong to the intended workspace before dispatch. If control is unavailable, report grouping as pending rather than claiming it happened.
 
+## Coding runner and model
+
+For new coding implementation, fixes and refactoring assignments, default to Claude Code as the runner and Opus 5.5 as the requested model (user preference recorded 2026-10-17). An explicit user-approved scope or assignment override takes precedence. Keep the current coordinator runner and existing workers unchanged; this preference does not authorize launching or replacing agents.
+
+Before dispatch, verify the installed Claude Code runner, the account's access to the requested model, and the exact supported model identifier using current runner/provider evidence. The display name here is a preference, not proof of model availability or a CLI identifier. Do not invent an identifier or use an unverified floating alias. If unavailable or unverifiable, report the specific limitation and ask for an alternative; do not silently substitute another model or runner.
+
+Record the requested runner/model, verified identifier and availability evidence in the assignment. Launch through Herdr using discovered runner syntax and explicit model selection, then verify the selected model from available runtime evidence before sending coding work. If runtime identity cannot be verified, report it and hold dispatch. Apply the same plans, authoring philosophy, handoff and checkpoint rules regardless of runner.
+
 ## Worker updates
 
 An assigned agent is a worker. Give it the plan, context, completion checks, handoff path, publication route and the coordinator's verified live binding. Save the handoff before notification; across checkouts publish it first. Include plan/assignment IDs, revision/time, evidence, blockers and next action. Notify for actionable blockers, scope decisions, overlapping work or review-ready results. Routine progress stays in the handoff.
