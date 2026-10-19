@@ -79,8 +79,11 @@ prompt guards, single confirmation and evidence procedure. This never covers pro
 MCP-server approval, tool permissions, other channels or a different prompt; ask for those.
 Follow that
 procedure rather
-than copying it into assignments. A worker saves/publishes its handoff before a non-waiting named
-wake; runtime state is not completion evidence.
+than copying it into assignments. A worker saves/publishes its handoff, then sends a named wake at
+every stop: completed, blocked or waiting. Waiting never defers the wake. Runtime state is not
+completion evidence. For a worker in a Herdr pane, start the canonical skill's worker stop observer
+after dispatch when Herdr control is authorized; it wakes the coordinator if the worker stops
+without reporting.
 Never paste asynchronous updates into human-facing terminal editors.
 Unbound/offline/stale delivery leaves durable work pending for startup/plan-sync recovery.
 For review-ready work, give the owning coordinator the source revision and relevant review
