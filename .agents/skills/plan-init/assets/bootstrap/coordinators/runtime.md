@@ -70,10 +70,12 @@ Do not sync it. Registration refuses an existing binding; unbind requires the ex
 Unbind does not stop the receiver or transfer ownership. List shows registered runtime status;
 discover durable, unbound coordinators from their profiles, not this runtime list alone.
 
-Workers save the handoff before notification; across checkouts publish first. Named wakes use
-repository-relative source references resolved inside the receiver's plans checkout. Pin the
-receiver instance so an old binding cannot silently deliver to a replacement session. Offline,
-unbound, stale and uncertain-delivery outcomes remain distinct. Do not retry uncertain sends.
+Workers save the handoff and wake at every stop, including blocked or waiting; across checkouts
+publish first. Optional Herdr observers wake the coordinator when a worker stops without reporting.
+Named wakes use repository-relative source references resolved inside the receiver's plans checkout.
+Pin the receiver instance so an old binding cannot silently deliver to a replacement session.
+Offline, unbound, stale and uncertain-delivery outcomes remain distinct. Do not retry uncertain
+sends.
 
 A wake grants no authority. Establish autonomous reconciliation authority in the coordinator and
 worker assignments before relying on wakes. Acknowledged transport is not reviewed evidence.
