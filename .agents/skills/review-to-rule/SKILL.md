@@ -37,12 +37,14 @@ No: set every matching entry's outcome to `declined: <user's reason>`. Future oc
 
 Yes: write the rule in the reviewed code's repository and language, on its own branch from the default branch, under the assignment's PR authority. The user approves it through the PR.
 
-- Choose by shape: a pattern ban (Go: `forbidigo` or `ruleguard`; TypeScript: `oxlint`; Python: `ruff`) for "do not write X"; a custom analyzer for structural rules; a review-skill check only when no deterministic rule can express it.
-- Extend the repository's existing lint configuration. If the language has no linter there, report that as a blocker instead of introducing one.
+- Fix at the highest level that works. When the repository owns the code involved, first prefer a type or API change that makes the bad code unwritable, such as a constructor-only type. Otherwise choose a rule by shape: a pattern ban (Go: `forbidigo` or `ruleguard`; TypeScript: `oxlint`; Python: `ruff`) for "do not write X"; a custom analyzer for structural rules; a review-skill check only when no deterministic rule can express it. Say why a higher level did not work.
+- Extend the repository's existing lint configuration, and make sure CI runs the same lint command as local runs. If the language has no linter there, or CI does not run it, report that as a blocker instead of introducing one.
+- Make the error message name the fix: the function, type or pattern to use instead.
 - Build tests from both occurrences: reduce each annotated snippet to a minimal failing case, and add the corrected form as a passing case.
-- Run the linter on the whole repository and fix every existing finding. The rule lands with zero findings; do not add exclusions to reach that.
+- Prove the rule on the real code: run it on each occurrence's reviewed revision and confirm it reports the annotated lines, then on the revision that fixed it and confirm it is clean. Record the commands and results in the PR. A rule that has not been seen to fail on a real occurrence is not done.
+- Run the linter on the whole repository and fix every existing finding. The rule lands with zero findings; do not add exclusions to reach that. If the existing findings are too many to fix in one PR, ask the user before changing the approach.
 - Put a comment beside the rule's config citing both ledger entries by plans path, such as `feedback/2026-11-03-functional-options-1.md`.
-- Set both entries' outcome to `rule: <rule name>, <PR URL>`.
+- Set both entries' outcome to `rule: <rule or type change>, <PR URL>`.
 
 ## Publish entries
 
