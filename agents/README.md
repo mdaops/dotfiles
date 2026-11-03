@@ -96,3 +96,7 @@ Use `/why`, `/how` and `/teach` in Claude Code; in Pi use `/skill:why`, `/skill:
 - `/teach me how this PR changes onboarding` explains the change and material tradeoffs.
 
 Use the worker for implementation details and the coordinator for scope, dependencies and cross-worker decisions. Both must ground answers in inspected evidence and distinguish inferred rationale from documented intent. Explanation alone does not request code changes; explicitly asking for a fix does.
+
+## Review to rule
+
+Use `/review-to-rule` (Pi: `/skill:review-to-rule`) when a code review returns annotations. It logs each code annotation to the plans `feedback/` ledger and asks whether feedback repeated across branches in one language should become a lint rule. Pre-push review steps belong in each product repository's AGENTS.md. Install it with authoring-philosophy.
