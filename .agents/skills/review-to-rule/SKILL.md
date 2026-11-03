@@ -1,34 +1,19 @@
 ---
-name: review-gate
-description: Run the pre-push review gate, log kept review feedback to the plans feedback ledger, and turn repeated feedback into a lint rule. Use before pushing a branch or opening a PR, or when the user asks for the final review.
+name: review-to-rule
+description: Log code review feedback to the plans feedback ledger and turn feedback that recurs across branches into a lint rule. Use when the user's code review returns annotations on code, such as a final Plannotator review.
 ---
 
-# Review gate
+# Review to rule
 
 Read [the shared authoring philosophy](../authoring-philosophy/SKILL.md) unless it is already loaded.
 
 Locate the plans checkout from an explicit task path or the PLANS_DIR environment variable. If neither is available, ask for it. Ledger entries live in `feedback/` there and follow `templates/feedback.md`. Work on code in the reviewed repository's own checkout.
 
-This gate precedes a push; it does not authorize the push, a PR, a merge or plans publication.
+Input is the user's code review: each annotation tied to a file and lines. Automated review findings count only when the user keeps them as annotations. General comments are not logged. For a Herdsman coordinator-owned review, the review ID is its review directory name; a direct session has none.
 
-## 1. Automated review
+## 1. Log before acting
 
-Fetch, then review the branch diff against `origin/<default branch>`. Use whichever runs here:
-
-- Claude Code: the `code-review` skill on the branch.
-- Codex: `codex review --base origin/<default branch>`.
-
-One must run. If neither is available, stop and report the gate as blocked. Check each finding against the code before acting on it, and tell the user what you fixed or dismissed. Automated findings are not logged unless the user keeps them in step 2.
-
-## 2. Final Plannotator review
-
-Open the user's review: `plannotator review --base origin/<default branch>`, or the Herdsman coordinator-owned review when the assignment uses one. The review ID is the Herdsman review directory name; a direct session has none.
-
-Treat every annotation tied to a file and lines as kept feedback. General comments are not logged.
-
-## 3. Log before acting
-
-For each kept code annotation, write one ledger entry before changing code:
+For each code annotation, write one ledger entry before changing code:
 
 - Fill every field of `templates/feedback.md`. Copy the feedback verbatim.
 - Language is the language of the annotated code, such as `go`, `typescript` or `python`.
@@ -38,7 +23,7 @@ For each kept code annotation, write one ledger entry before changing code:
 
 Then act on the feedback as usual.
 
-## 4. Repeat check
+## 2. Repeat check
 
 For each entry, find other entries with the same `Label` and `Language` on a different repository and branch pair.
 
@@ -46,9 +31,9 @@ For each entry, find other entries with the same `Label` and `Language` on a dif
 - Any match with outcome `rule: ...`: the rule missed this occurrence. Tell the user and name the rule; do not ask again.
 - Otherwise, on a match, ask the user in the conversation: "`<label>` (`<language>`) recurred on `<branch>` and `<other branch>`. Should it be a lint rule?" Quote both feedback texts.
 
-## 5. Answer
+## 3. Answer
 
-No: set every matching entry's outcome to `declined: <user's reason>`. Future occurrences inherit it through step 4.
+No: set every matching entry's outcome to `declined: <user's reason>`. Future occurrences inherit it through step 2.
 
 Yes: write the rule in the reviewed code's repository and language, on its own branch from the default branch, under the assignment's PR authority. The user approves it through the PR.
 
@@ -61,4 +46,4 @@ Yes: write the rule in the reviewed code's repository and language, on its own b
 
 ## Publish entries
 
-Ledger entries are plans changes. Publish them through the scope's route in `coordinators/sync.md`. In a shared checkout, or without that authority, leave them uncommitted and list their paths in your handoff or report.
+Ledger entries are plans changes. Publish them through the scope's route in `coordinators/sync.md`. In a shared checkout, or without that authority, leave them uncommitted and list their paths in your handoff or report. This skill does not authorize a push, merge or plans publication beyond that.
